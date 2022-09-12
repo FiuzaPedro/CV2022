@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3aafa9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.upArrow {
+    display: none;
+}
+
+.imgsContainer {
+    /* border: 2px solid #ffefff; */
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url('../img/brinde.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left,
+.right {
+    height: 100%;
+    width: 50%;
+}
+
+
+.left:hover {
+    cursor: url('../img/arrowleft.gif'), default;
+}
+
+.right:hover {
+    cursor: url('../img/arrowright.gif'), default;
+}
+
+.bodyTitleContainer {
+    position: absolute;
+    z-index: 9;
+    font-family: monospace;
+    font-size: 1.5em;
+    opacity: 0.8;
+    background-color: #def2f1;
+    margin: 120px 0;
+    top: 0;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+    color: #3aafa9;
+    transition: .6s linear all;
+    height: 100%;
+    padding: 5%;
+}
+
+.pTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.fiuza {
+    text-shadow:
+        -2px 0px 1px black;
+}
+
+.miniImg {
+    width: 10%;
+    height: 20%;
+    border-radius: 100%;
+    padding: 1%;
+    align-self: flex-start;
+}
+
+
+
+.imgTechs {
+    height: 100px;
+    width: 100px;
+    border-radius: 45%;
+    padding: 2%;
+}
+
+.titleFaded {
+    opacity: 0;
+}
+
+code {
+    position: relative;
+    color: #def2f1;
+    background-color: #3aafa9;
+    width: 85%;
+    padding: 2%;
+}
+
+code::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -15px;
+    display: inline-block !important;
+    width: 0;
+    height: 0;
+    border-right: 15px solid #3aafa9;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+
+}
+
+/*footer*/
+footer {
+    opacity: 0;
+    position: relative;
+    margin-top: 20%;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    font-family: 'Kanit';
+    padding: 2%;
+    width: 100%;
+    z-index: 9;
+}
+
+.pFooter {
+    color: white !important;
+}
+
+footer a {
+    color: white
+}
+
+footer a:hover {
+    color: gold;
+}
+
+.hrFooter {
+    margin: 3% 0;
+    border-color: white;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 2% 30%;
+}
+
+@media screen and (max-width:700px) {
+    footer li {
+        padding: 0 6%;
+    }
+}

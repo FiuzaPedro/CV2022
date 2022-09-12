@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+@import url("https://fonts.googleapis.com/css?family=Kreon:300");
+#sectionAcerca {
+  background-color: steelblue;
+  padding: 3%; }
+
+.acercaCentral {
+  width: 60%;
+  margin: 5% 17.5%;
+  outline: 20px solid white;
+  background-image: url("../img/tuboentrance.jpg");
+  background-size: 100% 100%;
+  background-size: cover; }
+  .acercaCentral .acercaBox {
+    padding: 5%;
+    background-color: white;
+    opacity: 0.7; }
+  .acercaCentral h2 {
+    background-color: #4dffff;
+    padding: 3%; }
+  .acercaCentral h2, .acercaCentral p {
+    color: black !important; }
+  .acercaCentral p {
+    font-family: 'Kreon', serif;
+    font-size: 1.5em;
+    line-height: 2em; }
+
+@media only screen and (max-width: 850px) {
+  #sectionAcerca {
+    padding: 10%; }
+
+  .acercaCentral {
+    width: 100%;
+    margin: 0;
+    outline: 10px solid white;
+    background-image: url("../img/tuboentrance.jpg"); }
+    .acercaCentral .acercaBox {
+      padding: 3%;
+      background-color: white;
+      opacity: 0.7; }
+    .acercaCentral h2 {
+      padding: 3%; }
+    .acercaCentral p {
+      font-size: 1.2em;
+      line-height: 1.5em; } }
+#sectionContacto h1 {
+  color: black; }
+#sectionContacto .contactWrapper {
+  text-align: center;
+  margin-top: -4%; }
+#sectionContacto .divContact {
+  padding: 2.5% 0;
+  background-image: url("../img/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+#sectionContacto .mapa {
+  margin: 2% 0;
+  border-radius: 20px;
+  border: 20px inset gray;
+  box-shadow: 0 0 10px lightgray; }
+  #sectionContacto .mapa iframe {
+    width: 100%;
+    height: 400px; }
+#sectionContacto .clear {
+  clear: both; }
+#sectionContacto form {
+  text-align: center; }
+  #sectionContacto form input {
+    margin-left: 30%;
+    width: 40%;
+    display: block;
+    border-radius: 10px;
+    padding: 1%;
+    font-size: 1em;
+    background: -webkit-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: -o-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
+  #sectionContacto form input, #sectionContacto form textarea {
+    color: white;
+    font-family: 'Kreon'; }
+    #sectionContacto form input:focus, #sectionContacto form textarea:focus {
+      outline: none;
+      border: 0.5px outset lightblue; }
+  #sectionContacto form input[type="button"] {
+    font-family: "Luckiest Guy";
+    color: white;
+    margin: 5% 0;
+    border: 1px solid black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 30%;
+    width: 40%;
+    -webkit-transition: all ease-in-out 0.7s;
+    -ms-transition: all ease-in-out 0.7s;
+    transition: all ease-in-out 0.7s; }
+    #sectionContacto form input[type="button"]:hover {
+      cursor: pointer;
+      background: none;
+      background-color: white;
+      color: #4dffff; }
+  #sectionContacto form label, #sectionContacto form .pTextarea span {
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); }
+  #sectionContacto form textarea {
+    resize: none;
+    width: 55%;
+    font-size: .9em;
+    background: -webkit-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: -o-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
+
+@media only screen and (min-width: 850px) {
+  #sectionContacto .contactWrapper {
+    text-align: center;
+    margin-top: 0; }
+  #sectionContacto .divContact {
+    padding: 1.5% 0;
+    width: 45%;
+    height: 400px; }
+  #sectionContacto .divContact, #sectionContacto .mapa {
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 10%; }
+  #sectionContacto .mapa {
+    border: none;
+    width: 40%;
+    margin-top: 0.1%;
+    box-shadow: 0 0 10px lightgray; }
+    #sectionContacto .mapa iframe {
+      border: 20px inset white; }
+  #sectionContacto form input, #sectionContacto form textarea {
+    color: white;
+    font-family: "Luckiest Guy"; }
+  #sectionContacto form input[type="button"] {
+    font-family: "Luckiest Guy";
+    color: white;
+    margin: 5% 0;
+    border: 1px solid black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-left: 30%;
+    width: 40%; } }
+.hEventos {
+  color: black; }
+
+#sectionEventos {
+  padding: 2%;
+  overflow: hidden; }
+  #sectionEventos h2 {
+    color: black; }
+
+.wrapperEventos {
+  margin: 10% 10% 0;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3em;
+  -ms-grid-columns: 1fr [1];
+  grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: 250px [4];
+  grid-template-rows: repeat(4, 350px); }
+
+.divEventos {
+  text-align: left; }
+  .divEventos span {
+    color: steelblue; }
+  .divEventos p {
+    color: black;
+    line-height: 1.5em; }
+  .divEventos .btnEventos {
+    margin-top: 5%;
+    float: right;
+    padding: 3%;
+    width: 35%;
+    font-size: 1em;
+    background-color: gray;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 999em;
+    -webkit-transition: 0.4s all ease-out;
+    -ms-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out; }
+    .divEventos .btnEventos:hover {
+      cursor: pointer;
+      background-color: lightgray;
+      -webkit-box-shadow: 0 0 10px steelblue;
+      box-shadow: 0 0 10px steelblue;
+      color: black;
+      font-weight: bolder; }
+
+.divImgEvento {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-5deg) skew(-5deg);
+  -ms-transform: rotate(-5deg) skew(-5deg);
+  transform: rotate(-5deg) skew(-5deg);
+  -webkit-box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px black; }
+
+.scottish {
+  background-image: url("../img/scottishparty.jpg"); }
+
+.eighties {
+  background-image: url("../img/80s90s.jpg"); }
+
+/*query dos eventos*/
+@media only screen and (min-width: 850px) {
+  .wrapperEventos {
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 400px [4];
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 15%;
+    padding-bottom: 100px; }
+
+  .btnEventos {
+    margin: 5% 0;
+    padding: 5%;
+    width: 50%; } }
+#sectionGaleria {
+  background-color: white; }
+  #sectionGaleria * {
+    color: black; }
+
+.galleryWrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr [3];
+  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: 1fr [4];
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin: 2% 5%;
+  border: 2px groove turquoise; }
+
+div.gallery {
+  border: 1px solid #4dffff;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  background-color: #4dffff; }
+
+div.gallery:hover {
+  border: 1px solid gray;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
+div.gallery img {
+  width: 100%;
+  height: auto; }
+
+div.desc {
+  padding: 15px;
+  text-align: center; }
+
+.flipLightBox span {
+  display: none; }
+
+@media only screen and (max-width: 850px) {
+  .galleryWrapper {
+    -ms-grid-rows: 1fr [3];
+    grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 2% 5%;
+    border: 2px groove turquoise; } }
+#sectionBebidas {
+  margin-bottom: 30%; }
+  #sectionBebidas > * {
+    color: black !important; }
+
+#sectionBebidas >
+.gridWrapper {
+  width: 60%;
+  margin: 4% 0 0 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr [10];
+  grid-template-rows: repeat(10, 1fr);
+  -ms-grid-columns: 1fr [2];
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1%; }
+  #sectionBebidas >
+  .gridWrapper div {
+    border: 1px solid turquoise;
+    height: 200px;
+    background-size: cover;
+    position: relative; }
+  #sectionBebidas >
+  .gridWrapper div p {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4%;
+    font-family: 'Luckiest Guy', cursive; }
+
+.spanPreco {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  border: white 2px solid;
+  background-color: gold;
+  border-radius: 50%;
+  padding: 4%;
+  box-shadow: 0 0 10px gold; }
+
+@media only screen and (max-width: 850px) {
+  #sectionBebidas {
+    margin-bottom: 15%; }
+
+  #sectionBebidas >
+  .gridWrapper {
+    width: 100%;
+    margin: 4% 0 0 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr [10];
+    grid-template-rows: repeat(12, 1fr);
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%; }
+    #sectionBebidas >
+    .gridWrapper div {
+      border: 1px solid turquoise;
+      height: 200px;
+      background-size: cover; } }
+#sectionStaff {
+  width: 100%;
+  padding-bottom: 10%; }
+  #sectionStaff p {
+    color: black; }
+  #sectionStaff h1, #sectionStaff h2, #sectionStaff h3 {
+    color: black; }
+  #sectionStaff .gridStaff {
+    display: -ms-grid;
+    display: grid;
+    padding: 5%;
+    width: 70%;
+    margin: 0 10% 10%;
+    grid-gap: 1%; }
+    #sectionStaff .gridStaff img {
+      border-radius: 15px; }
+    #sectionStaff .gridStaff .infoStaff {
+      grid-area: stf; }
+
+/*end sectionStaff*/
+@media only screen and (max-width: 850px) {
+  .hStaff {
+    font-size: 1.5em !important; } }
+body {
+  margin: 0;
+  padding: 0; }
+
+section {
+  text-align: center; }
+  section h1 {
+    padding: 2%;
+    background-color: #4dffff;
+    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); }
+
+#mobileLinks {
+  display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Luckiest Guy', cursive; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: white; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+hr {
+  border-color: white; }
+
+.outsideBar {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 5px; }
+
+.insideBar {
+  background-color: turquoise;
+  border-right: 2px solid black;
+  height: 5px;
+  width: 0%;
+  max-width: 100%;
+  overflow: hidden; }
+
+#mainHeader {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 9999999;
+  -webkit-transition: 0.5s linear;
+  -ms-transition: 0.5s linear;
+  transition: 0.5s linear; }
+  #mainHeader:hover {
+    background-color: black;
+    background-color: black; }
+  #mainHeader * {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    -webkit-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+  #mainHeader a {
+    text-decoration: none;
+    padding: 2%; }
+    #mainHeader a:hover {
+      color: #4dffff; }
+  #mainHeader .ulNav a:hover {
+    margin-bottom: -2px;
+    border-bottom: 2px solid #4dffff; }
+  #mainHeader ul, #mainHeader a, #mainHeader li {
+    color: white; }
+  #mainHeader li {
+    padding: 2% 2%;
+    font-size: 1.2em;
+    font-family: 'Luckiest Guy', cursive; }
+  #mainHeader .ulSocial {
+    margin-left: auto;
+    margin-right: 10%; }
+    #mainHeader .ulSocial li {
+      padding: 0 20%; }
+  #mainHeader .imgLogo {
+    width: 10%;
+    height: 10%; }
+
+#sectionHome {
+  background-color: black; }
+
+#hHome {
+  position: absolute;
+  font-size: 2.3em;
+  color: white;
+  background-color: transparent;
+  padding: 3%;
+  border-radius: 50%;
+  border: 1px solid gray;
+  top: 20%;
+  left: 5%;
+  box-shadow: 1px 1px 20px white; }
+
+.hTestemunhos {
+  color: black; }
+
+#sectionTestemunhos {
+  margin-bottom: 10%; }
+
+.item {
+  height: 240px;
+  padding: 5%;
+  text-align: left; }
+  .item img {
+    border-radius: 50%;
+    display: inline;
+    height: 80%;
+    width: 15% !important; }
+  .item p {
+    margin: -50px 0 0 20% !important;
+    font-style: italic;
+    font-size: 1.3em;
+    color: black; }
+    .item p:before {
+      content: open-quote;
+      font-size: 2em;
+      font-weight: bolder;
+      padding-right: 1%;
+      color: gray; }
+    .item p:after {
+      content: close-quote;
+      font-size: 2em;
+      font-weight: bolder;
+      padding-left: 1%;
+      color: gray; }
+  .item span {
+    font-weight: bolder;
+    float: right;
+    margin-right: 5%;
+    font-size: 1.5em; }
+
+footer {
+  position: relative;
+  text-align: center;
+  height: 450px;
+  padding-top: 10%;
+  background-color: darkslategray;
+  color: white; }
+  footer .aboutme {
+    position: absolute;
+    top: -25%;
+    margin-left: 40%;
+    padding: 2% 0;
+    width: 20%;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    background-color: white; }
+    footer .aboutme .hAboutme {
+      color: black;
+      margin: 0; }
+    footer .aboutme img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; }
+  footer .ulFooter {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around; }
+    footer .ulFooter li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      footer .ulFooter li a {
+        color: white; }
+        footer .ulFooter li a:hover {
+          color: gold; }
+
+@media only screen and (max-width: 850px) {
+  footer {
+    height: 300px;
+    padding-top: 10%;
+    margin-top: 30%; }
+    footer .footerWrapper {
+      margin-top: 5%; }
+    footer .aboutme {
+      margin-left: 20%;
+      padding: 2% 0;
+      width: 60%; }
+      footer .aboutme .hAboutme {
+        margin: 0; }
+      footer .aboutme img {
+        width: 50px;
+        height: 50px; }
+    footer .hSocialFooter {
+      font-size: 1em; }
+    footer .ulFooter {
+      margin: 0;
+      padding: 0;
+      width: 70%;
+      margin-left: 15%;
+      justify-content: space-between; }
+      footer .ulFooter li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0; }
+
+  .videoTubo {
+    display: none; }
+
+  #sectionHome {
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/tubocrew2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  .hHome {
+    position: absolute;
+    font-size: 1.6em;
+    color: #1fc8db;
+    background-color: transparent;
+    padding: 3%;
+    border-radius: 50%;
+    border: 1px solid gray;
+    top: 20%;
+    left: 5%;
+    box-shadow: 1px 1px 20px white; }
+
+  #mainHeader {
+    display: none; }
+
+  .outsidebar, .insidebar {
+    display: none; }
+
+  .ulMobile {
+    z-index: -1; }
+
+  #mobileLinks {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    opacity: 0.9;
+    height: 10%;
+    width: 100%;
+    background-color: #4dffff;
+    background: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    -webkit-transition: 0.6s linear height;
+    -ms-transition: 0.6s linear height;
+    transition: 0.6s linear height; }
+    #mobileLinks h2 {
+      margin-top: 2%; }
+    #mobileLinks .ulMobile {
+      display: none;
+      z-index: -1; }
+    #mobileLinks ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-top: 10%;
+      opacity: 0;
+      z-index: -1 !important;
+      -webkit-transition: 0.6s ease-in-out all;
+      -ms-transition: 0.6s ease-in-out all;
+      transition: 0.6s ease-in-out all; }
+      #mobileLinks ul .iconMob {
+        display: inline;
+        margin-right: 2%; }
+      #mobileLinks ul li {
+        margin-bottom: 5%;
+        font-family: 'Luckiest Guy', cursive; }
+        #mobileLinks ul li a {
+          color: black;
+          text-decoration: none;
+          -webkit-transition: 0.4s linear all;
+          -ms-transition: 0.4s linear all;
+          transition: 0.4s linear all; }
+          #mobileLinks ul li a:hover {
+            color: white; }
+
+  .burgerMenu {
+    cursor: pointer;
+    height: 20px;
+    position: fixed;
+    top: 2.5%;
+    right: 10%; }
+
+  .bar1, .bar2, .bar3 {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s; }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+    transform: rotate(-45deg) translate(-4px, 4px); }
+
+  .change .bar2 {
+    opacity: 0; }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px); }
+
+  #sectionTestemunhos {
+    margin-bottom: 10%; }
+
+  .item {
+    height: 200px;
+    padding: 3%; }
+    .item img {
+      display: none !important; }
+    .item p {
+      margin: 0 0 0 10% !important;
+      font-size: 1.1em;
+      color: black; } }
+
+/*# sourceMappingURL=main.css.map */

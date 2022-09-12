@@ -1,0 +1,206 @@
+.sectionExperience {
+    height: 900px;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1%;
+    margin-top: 10%;
+}
+
+
+.card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 80%;
+    height: 100%;
+    padding: 2%;
+    margin: 0 7% 2%;
+    border: 3px outset teal;
+    border-radius: 20px;
+    transition: 0.8s linear all;
+    /* box-shadow: -10px 0px 5px teal, 10px 0px 5px teal, 0px 10px 5px teal, 0px -10px 5px teal; */
+}
+
+/* .card::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -10%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 20px solid teal;
+    border-bottom: 10px solid transparent;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: -10%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid teal;
+    border-bottom: 10px solid transparent;
+} */
+
+
+/* .scrolling-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.scrolling-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */
+
+.h1ExpMobile {
+    text-align: center;
+}
+
+.imgExpMobile {
+    width: 80%;
+    height: 80%;
+}
+
+.pExpMobile {
+    width: 100%;
+    padding: 2%;
+}
+
+.expChoice {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    z-index: 9;
+}
+
+.expChoice p {
+    transition: 0.3s all linear;
+    cursor: pointer;
+    padding: 1%;
+    outline: 2px solid teal;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-align: center;
+    z-index: 4;
+}
+
+.iconAcademic,
+.iconPro {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+}
+
+.expChoice p:hover>* {
+    opacity: 1;
+}
+
+.expChoice p:hover,
+.expChoice p:focus {
+    background-color: teal;
+    color: white;
+}
+
+.activeChoice {
+    background-color: teal;
+    color: white;
+}
+
+/* .icons {
+    opacity: 0;
+    font-size: 0;
+} */
+
+.arrowChoiceContainer {
+    width: 100%;
+    text-align: center;
+    margin: 5%;
+    z-index: 1;
+}
+
+.outerAcademic,
+.outerProfessional {
+    /* margin: 1% auto 4%; */
+    display: inline-block;
+}
+
+/* .outer {
+    height: 40px;
+    width: 20px;
+    border: 1px solid black;
+} */
+
+.outerAcademic,
+.outerProfessional {
+    margin-top: 1%;
+    width: 30%;
+    height: 20px;
+    border: 2px outset teal;
+    transform: rotateX(90deg);
+}
+
+.innerAcademic,
+.innerProfessional {
+    position: relative;
+    height: 20px;
+    width: 0px;
+    background-color: teal;
+}
+
+/* .rightTriangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid teal;
+    border-bottom: 10px solid transparent;
+
+} */
+
+/* .innerAcademic::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 20px solid teal;
+    border-bottom: 10px solid transparent;
+} */
+
+.transformedAcad {
+    animation-name: animAcad;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.transformedPro {
+    animation-name: animPro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animAcad {
+    0% {
+        transform: rotateX(90deg) translate(100px);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(200deg) rotateZ(90deg);
+    }
+}
+
+@keyframes animPro {
+    0% {
+        transform: rotateX(90deg) translate(100px);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(200deg) rotateZ(90deg);
+    }
+}

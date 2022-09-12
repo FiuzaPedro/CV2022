@@ -1,0 +1,150 @@
+.ementaWrapper {    
+    text-align: center;        
+}
+.pEmenta {
+    text-align: left;
+    padding:5%;
+    border-radius: 100%; background-color: white;
+    width:40%;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.8em;
+}
+.listaEmenta {
+    color: white;    
+    font-weight: bold;
+    border: 4px outset white;
+    padding:0.8%;
+    background-color: rgb(36, 117, 163);
+    margin-bottom: 0;    
+}
+.listaEmenta li {
+    padding:0.8%;
+    font-size: 1em;
+    cursor: pointer;   
+    letter-spacing: 2px;     
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.activeEmenta {
+    background-color: white; color:rgb(36, 117, 163);
+}
+.listaEmenta li:hover {
+    background-color: white; color:rgb(36, 117, 163);
+}
+.menuWrapper {
+    border: 4px double rgb(36, 117, 163);
+    height:1200px;
+    padding:2%;
+    background-color: rgba(0,0,0,0.5);
+    background: url("../img/galeria2.jpeg") no-repeat;
+    background-size: cover; 
+}
+.divsEmenta {
+    width: 100%;
+}
+.imgEmenta {
+    width:300px ; height: 260px;
+    border:2px solid white;
+}
+.divLeft {
+    width:35%;
+}
+.divRight { width:63%; border:2px solid white;}
+.divLeft, .divRight {
+    float: left;    
+}
+.divRight {
+    background-color: white;
+    text-align: left;
+}
+
+.rowLista {    
+    padding:2%;
+}
+.leftImg {
+    width: 20%;    
+    float: left;
+}
+.rightDesc {    
+    width:60%;
+    float: left;    
+}
+.rightDesc > * {
+    display: inline;
+}
+.rightDesc h4 {
+    text-transform: uppercase;
+}
+.imgEmentaSmall {            
+    border-radius: 50%;
+    height:100px; width:100px;
+}
+.preco {    
+    float: right; padding:2%;
+    background-color: gold;
+    color:rgb(36, 117, 163);
+}
+.rowLista p {        
+    color: tomato;  
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.8em;  
+    border: 2px solid darkorange;
+    display: block;
+}
+#divCarnes, #divPeixes, #divVegetariano, #divSobremesas, #divBebidas {
+    display: none;
+    opacity:0;
+}
+
+
+@media only screen and (max-width:800px ) {
+    .listaEmenta {
+        padding:2%;
+    }
+    .listaEmenta li {
+        display: inline;
+        font-size: 0.8em;
+        padding:1.5%;
+    }
+    .pEmenta {
+        text-align: left;
+        padding:10%;
+        width:70%;        
+        font-size: 1.3em;
+    }
+    .divLeft, .imgEmenta {                
+        display:none;        
+    }
+    .divRight {
+        width: 100%;
+        text-align: center;
+        font-size: .7em;
+    }
+
+    .rowLista {            
+        width: 100%;
+    }
+    .leftImg {
+        width: 10%;    
+        float: left;
+    }
+    .rightDesc {    
+        width:70%;
+        margin-right:4%;
+        float: right;
+    }        
+    .imgEmentaSmall {            
+        border-radius: 50%;
+        height:80px; width:80px;
+    }
+
+}/*end query */
+
+@media only screen and (max-width:600px ) {
+    .listaEmenta {
+        padding:0;
+    }
+    .listaEmenta li {
+        display: block;        
+        padding:1%;
+    }
+}

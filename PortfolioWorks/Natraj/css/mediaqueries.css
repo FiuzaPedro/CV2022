@@ -1,0 +1,40 @@
+@media screen and (max-width:600px) {
+	.slick-prev, .slick-next {
+		/*left:-100% !important;
+        right: -100% !important;*/
+        display: none !important;
+    }	
+    .divImgFirma {
+        height:250px;
+    }
+    .galeria-foto img {
+        height: 100px; 
+        width:150px;
+        border: outset 2px gray;             
+    }
+    .galeria-foto:hover  {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .pReservas {
+        width:80%;                
+    }
+
+    .listContainer {
+		background-image: none;
+    }
+    .table {
+        width:100%;
+        margin-left:0;	
+    }
+    /*opinion arrows*/
+    .leftArrow {
+        left: 70px;
+    }
+    .rightArrow {
+        right:70px
+    }
+    .leftArrow, .rightArrow {
+        top: 320px;
+    }
+}

@@ -1,0 +1,588 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+/*general styles*/
+html  {
+	animation: fadeIn;
+	animation-duration: 1s;
+}
+html, body, .container-fluid {
+	margin: 0; padding:0;
+	box-sizing: border-box;
+	background-color: black;
+	scroll-behavior: smooth;
+	color: white;	
+}
+a {
+	color: white !important;	
+	transition: 0.4s ease-in-out all;
+}
+a:hover {
+	color: gray !important;
+}
+hr {
+	border-color: white;
+}
+section {
+	margin-bottom: 2%;	text-align: center;
+	padding-bottom: 4%; 
+}
+strong {
+	color: #d9534f;
+}
+p {
+	font-size: 1.2em;
+}
+h1,h2,h3,h4 {
+	font-family: 'Rancho', cursive;
+	font-size: 3em;
+}
+/*end general styles*/
+/*up Arrow*/
+.upArrow {	
+	opacity: 0;	
+	position: fixed;
+	bottom: 5%;
+	right:-5%;	
+	z-index: 999999999999;
+	transition: .8s linear all;
+	background-color: rgba(163, 26, 26, 0.2);
+	padding:2%; 
+	border-radius: 100%;
+}
+.upArrow:hover {
+	background-color: rgba(163, 26, 26, 1);
+}
+.arrowOn {
+	opacity: 1;
+	right: 5%;
+}
+.arrowOff {
+	opacity: 0;	
+	right:-5%;	
+}
+
+
+/*nav*/
+.navbar-brand {
+	width:40%;
+	animation: rotateIn; /* animate.css */	
+	animation-duration: 2s; /* animate.css properties*/	  
+}
+.navbar-brand img {
+	border-radius: 100%;
+	box-shadow: 0 0 5px white;
+}
+.navbar-brand img:hover {		
+	animation: wobble;
+	animation-duration: 2s;	
+}
+.nav-item > a {
+	text-transform: uppercase; font-weight: bold;
+	transition: 0.5s  ease-in-out all;
+}
+/*end nav*/
+
+
+.imgSlide {
+	height: 650px; width: 100%
+}
+.slideContainer {	
+	 box-shadow: 0px 0px 5px black;
+}
+.slick-prev, .slick-next {
+	background-color: rgba(0, 0, 0, 0.3) !important;	
+	border-radius: 100%; border: 1px outset white;
+	width:40px;
+	height: 40px;
+}
+.slick-prev {
+	left: 20px;	
+	z-index: 122	
+}
+.slick-next {
+	right:20px;
+}
+
+#insta:hover, #twitter:hover, #face:hover,#footerFace:hover, #footerInsta:hover, #footerTwitter:hover  {
+	color: coral !important;
+	transition: ease-in-out all 0.6s;
+}
+/*slideshow*/
+.your-class div {
+	position: relative;
+	text-align: center;
+	height:600px;
+	background-position: center center;	
+	background-size: 100% 100%;
+}
+.your-class div h3 {
+	font-family: 'Rancho', cursive;
+	font-size: 3em;
+	
+	border-radius: 0.5em;
+	/*padding:5.5% 10%;*/
+	display: inline-block;	
+	margin-top: 150px;
+	color:  #d9534f;
+	position: absolute;
+	right:8%;
+	bottom:30%;
+}
+/*end slideshow*/
+
+
+/*about section*/
+.divImgFirma {
+	background-image: url('../img/street.jpg');
+	height:500px;
+}
+.divTxtFirma {
+	text-align: center;
+	padding:2%;	
+}
+.divTxtFirma p::first-letter {
+	font-size: 2em;
+	font-weight: bolder;
+}
+.divTxtFirma p::after{
+	content:'\00a9Natraj ' ;
+	font-family: 'Rancho', cursive;
+	font-size: 1.5em;
+	color: #d9534f;	
+}
+.pAbout {	
+	padding:1%
+}
+	/*opinions styles*/
+.hOpinions {
+	margin-top: 5%;
+}
+.colOpinioes {	
+	color: black;
+	height:500px;
+}
+.leftArrow, .rightArrow {
+	position: absolute;
+	top: 300px;
+	z-index: 99;
+	color: gray !important;	
+}
+.leftArrow:hover,.rightArrow:hover {
+	color: black !important;
+}
+.leftArrow {
+	left: 250px;
+}
+.rightArrow {
+	right:250px
+}
+.opinionContainer {
+	position: relative;
+}
+
+.clientOpinions {	
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	padding:5%;	
+	width:70%;
+	margin: 4% 0;	
+	border-radius: 5px;
+}
+.clientText {
+	quotes: '\201c' '\201d';
+	font-style: italic;
+	font-size: 1.2em;
+}
+.clientText::before {
+	content:open-quote;
+	font-size: 2.5em;	
+}
+.clientName {
+	color: rgb(194, 171, 68);
+	font-weight: bolder;
+	font-family: 'Rancho', cursive;
+	font-size: 2em;
+}
+.brandName {
+	font-weight: bold;
+}
+.brandName span{
+	color: darkgreen;
+}
+.activeClient {
+	left: 15%;
+	transition: 0.8s ease-in-out all;
+}
+.inactiveClient {
+	left: -200% !important;
+	transition: 0.8s ease-in-out all;
+}
+
+
+/*end opinions styles*/
+/*end about section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*galeria section*/
+#galeria, #menu {
+	padding-top:4%;
+}
+#galeria {
+	background-color: #d9534f;
+}
+.galeria-foto img {
+	height: 200px;
+	width: auto;
+	object-fit: cover;
+}
+.galeriaContainer {
+	padding:5%;	
+}
+.hGaleria {
+	text-shadow: 2px 2px 1px gray;
+}
+.galeria-foto {	
+	border-radius: 5px;
+	overflow: hidden;
+}
+.galeria-foto a img {
+	filter: blur(0px);
+}
+.galeria-foto:hover  {
+	border-radius: 0;
+	box-shadow: 0 0 8px white;
+	transition: 0.6s ease-in-out all;
+}
+.galeria-foto a:hover img {
+	filter: blur(3px);
+	transition: 0.7s ease-in-out all;
+}
+.galeria-foto a {
+	font-size: 3em !important;
+	color: skyblue !important;
+}
+/*end galeria section*/
+
+
+
+/*parallax config styles*/
+.rowParallax {
+	margin:10% 0;
+}
+.parallax {
+	width: 100%;
+}
+
+
+/*menu section*/
+
+/*.imgMenuSection {
+	position: absolute;	
+	z-index: 1;
+	width:100%; height: 100%;
+	margin:10% auto;
+}*/
+#menuListContainer {	
+	background-image: url("../img/curcuma.jpg");
+	/*Photo by Karolina Grabowska from Pexels*/
+	background-repeat: no-repeat;
+	background-size: cover ;
+	background-position: top right;
+	z-index: 2;
+	width: 80%;
+	margin:0 auto;
+	border: 2px outset #d9534f;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	padding:2.5%;	
+	opacity: 0.9;	
+}
+
+#menuListContainer div {
+	background-color: rgb(241, 238, 238);
+	background-color: rgba(0, 0, 0, 0.6);	
+}
+#menuListContainer h5 {
+	padding:1%;
+	transition: 0.2s ease-in-out all;
+	background-color:rgba(0, 0, 0, 0.3) 
+}
+#menuListContainer h5:hover {
+	cursor: pointer;	
+	text-shadow: 0px 0px 10px white;
+	font-weight: bolder;
+}
+.ui-accordion-header,.ui-state-active {
+	background-color: #d9534f !important;  
+	color: white;
+	border: none; outline: none;
+	
+}
+.ui-accordion-header.ui-state-active {
+	text-shadow: 0px 0px 10px white;
+	font-weight: bolder;	
+}
+.ui-accordion-header.ui-state-focus {
+	border: none; outline: none;
+}
+.dotted-bg {
+	border: 2px dotted red;
+}
+
+.listContainer {	
+	background-position: top left;
+	background-size: 200px 200px;
+	background-repeat:  no-repeat;
+	padding-bottom:1%;
+	text-align: left;
+}
+
+/*configs da table do menu*/.table {
+	width:75%;
+	margin-left:25%;	
+}
+.spanNome {
+	color: #e6b741; font-weight: bold;
+}
+/*end configs da table do menu*/
+
+.entradas {
+	background-image:url('../img/entradas.jpg');
+}
+.sopas {
+	background-image:url('../img/entradas.jpg');
+}
+.pao {
+	background-image:url('../img/naan.jpg');
+}
+.saladas {
+	background-image:url('../img/vegetariano.jpg');
+}
+.criancas {
+	background-image: url('../img/criancas.jpg');
+}
+.frango {
+	background-image: url('../img/food3.jpg');
+}
+.borrego {
+	background-image: url('../img/food3.jpg');
+}
+.cabrito {
+	background-image: url('../img/food3.jpg');	
+}
+.peixe {
+	background-image: url('../img/peixe.jpg');
+}
+.gambas {	
+	background-image: url('../img/gambas.jpg');	
+}
+.especialidades {
+	background-image: url('../img/especialidades.jpg');
+}
+.grelhados {
+	background-image: url('../img/grelhados.jpg');
+}
+.vegetarianos {
+	background-image: url('../img/vegetariano.jpg');
+}
+.biryani {
+	background-image: url('../img/biryani.jpg');
+}
+.arroz{
+	background-image: url('../img/arroz.jpg');
+}
+
+.divEspeciais {
+	margin: 5% auto;
+	text-align: center;
+}
+.hEspeciais {
+	font-size: 2em;
+}
+.colEspeciais {
+	margin: 3% 0;
+	
+}
+.colEspeciais img {
+	border-radius: 50%;
+	width:250px; 
+	height: 200px;
+}
+/*end menu section*/
+
+
+
+
+
+/*reservas section*/
+#reservas {
+	margin-top: 10%;
+	text-align: left;	
+}
+
+.hReservas {
+	background-color: #d9534f;
+	padding:3%;
+	text-align: left;
+	font-family: 'Rancho', cursive;
+	font-size: 2.5em;
+}
+.pReservas {
+	width:60%;
+	text-align: center;
+	margin: 1% auto;
+}
+#frmReserva {
+	background-image: url('../img/spices.jpg'); /*Photo by Shantanu Pal from Pexels*/
+}
+fieldset {
+	background-color: rgba(0, 0, 0, 0.6);	
+}
+form {
+	width: 80%;	
+	margin: 0 auto;
+	border:2px inset white;
+	padding:2%;
+	text-align: center;
+}
+legend {	
+	padding:1%; background-color: #d9534f;
+}
+label {
+	margin-top: 2%;
+	font-weight: bold;
+}
+input, select, label {	
+	width: 200px;		
+	transition: all 0.4s linear;
+	border-radius: 5px;
+}
+input:focus {
+	/*outline:1px solid white;*/
+	box-shadow: 0 0 25px white;
+}
+input, select {
+	background-color: #d9534f; color:white ;
+	font-weight: bold; padding:0.5em;
+}
+input[type="submit"] {
+	width: auto;
+	padding:0.4em 2em;
+	font-weight: bolder;
+	color:white		
+}
+input[type="submit"]:hover {
+	background-color: white;
+	color: #d9534f;	
+}
+/*end reservas section*/
+
+
+/*section contact*/
+#contact {
+	background-color: white;
+	box-shadow: 0 0 8px white;	
+	color: black;
+	width:80%;
+	margin:0 auto 5%;
+	padding:2.5%;	
+	background-image: url('../img/phone.jpg'); /*Photo by PhotoMIX Company from Pexels*/
+	background-size: cover;
+}
+.contactTxt {
+	background-color: lightgray;
+	background-color: rgba(255, 255, 255, 0.5)	;
+	padding:2.5%;
+	border-radius:25px;
+}
+.hContacto {
+	text-shadow: 2px 2px 1px red;
+} 
+
+/*end section contact */
+
+/*map section */
+.mapContainer {
+	height:100%;
+	width: 100%;	
+}
+.natraj-map {	
+	border: 2px inset silver;		
+	width: 100%;
+	height: 500px;
+	top: 0;
+	left: 0;
+  }
+/* end map section */
+
+
+
+
+/*footer*/
+footer {
+	background-color: #333333;
+	color:white;
+	padding: 5%;
+	text-align: center;
+}
+footer ul {
+	margin: 0; padding: 0;
+}
+footer ul li{
+	display: inline;
+}
+.footerLink:hover {
+	text-decoration: none;		
+}
+footer ul li:nth-child(2) {
+	margin:0 10%;
+}
+/*end footer*/
+
+/*reserva confirmation page */
+.divConfirm {
+	background-image: url('../img/sala.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	height:500px;
+}
+.pConfirma {
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding:4%;	
+	position: absolute;		
+	top:30%;
+	margin: 0 20%;
+	width: 54%;
+}
+.pConfirma strong {
+	color: white;
+}
+#btnConfirm {
+	padding:1.5% 4%;
+	background-color: #d9534f;
+	color:white;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 999em;
+	transition: 0.5s all ease-in-out;
+}
+#btnConfirm:hover {
+	cursor: pointer;
+	background-color: white;
+	color:#d9534f
+}
+/*end reserva confirmation page*/

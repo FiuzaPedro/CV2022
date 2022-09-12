@@ -1,0 +1,73 @@
+.hEventos {
+	color:$corFundo;
+}
+#sectionEventos {	
+	padding:2%;
+	overflow: hidden;
+	h2 {
+		color:$corFundo;
+	}
+}
+.wrapperEventos {	
+	margin:10% 10% 0 ;
+	width:80%;
+	display: -ms-grid;display: grid;
+	grid-gap:3em; 	
+	-ms-grid-columns: (1fr)[1];
+		    grid-template-columns: repeat(1, 1fr);
+	-ms-grid-rows: (250px)[4]; 
+	    grid-template-rows: repeat(4, 350px);
+
+}
+.divEventos {	
+	span {
+		color:steelblue;
+	}
+	text-align: left;
+	p {
+		color:$corFundo; line-height: 1.5em;
+	}
+	.btnEventos {
+		margin-top: 5%;float: right;	
+		padding:3%; width:35%; font-size: 1em;
+		background-color: gray; color: white;
+		letter-spacing: 1px; border-radius: 999em;
+		@include transition(.4s all ease-out);
+		&:hover {			
+			cursor:pointer; background-color: lightgray;
+			@include boxShadow(0 0 10px steelblue); color:$corFundo;
+			font-weight: bolder;
+		};
+	}
+}
+.divImgEvento {	
+	background-size: 100% 100%;
+	background-repeat: no-repeat;	
+	@include transform(rotate(-5deg) skew(-5deg));	
+	@include boxShadow( 5px 5px 10px $corFundo);
+}
+.scottish {
+	background-image:url('../img/scottishparty.jpg');	
+}
+.eighties {
+	background-image:url('../img/80s90s.jpg');
+}
+
+
+
+
+/*query dos eventos*/
+@media only screen and(min-width: 850px ) { //desktop view
+	.wrapperEventos  {
+		-ms-grid-columns: (1fr)[2];
+		    grid-template-columns: repeat(2, 1fr);		
+		-ms-grid-rows: (400px)[4];		
+		    grid-template-rows: repeat(2, 400px);
+		grid-gap:15%;		
+		padding-bottom: 100px;
+	}
+	.btnEventos {
+		margin: 5% 0;
+		padding:5%; width:50%; 			
+	}
+}

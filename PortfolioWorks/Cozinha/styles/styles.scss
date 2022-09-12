@@ -1,0 +1,242 @@
+$titlesColor: #ffb380;
+$btnColor: lightblue;
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+section, footer, .jumbotron {
+    font-family: 'Chewy', cursive;
+    letter-spacing: 0.02em;
+}
+#carouselSlidesOnly {
+    width: auto;
+    height: 70px; background-color: transparent;
+}
+.arrowUp{
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg); width:30px; height:30px;
+    border-left:7px solid $btnColor; border-top:7px solid $titlesColor;
+    position: fixed; bottom:5%; left:95%; cursor:pointer;
+    -webkit-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    z-index: 100;
+    &:hover {
+        border-color: red; 
+    }
+}
+a:visited,  a, a:hover {
+    color: black;
+    text-decoration: none;
+}
+.active {background-color:$btnColor; }
+#navbarNav {padding:20px;}
+#navbarNav > ul, #navbarNav > ul > li {
+    width:100%;
+    text-align: center !important;
+}
+#navbarNav > ul > li {
+    margin: 0 2%; font-family: 'Kaushan Script', cursive !important;
+}
+.imgLogo {
+    margin: 0 35%;
+    width: 30%;
+    height: 200px;
+}
+
+#navbarNav > ul > li > a {
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;   
+    /*padding: 10px 40px;*/
+    font-size: 0.9em;
+    border-radius:999em;
+    -webkit-box-shadow: 2px 2px 2px $btnColor;box-shadow: 2px 2px 2px $btnColor;
+    &:hover {
+        cursor: pointer;
+        background-color:$btnColor;
+    }
+    
+} /*end nav ul li */
+.parallaxHome1 {    
+    background-image: url("../img/salarestaurante.jpg");
+    /*margin-top: 100px;*/
+    height: 500px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .jumboCozinha {
+        margin:0 10%; top:5%; position: relative;
+        text-align: center; background-color:transparent;
+    }
+    .imgCozinha {
+        width: 30%; height:30%; opacity:0.8;
+    }
+}
+.parallaxHome2 {    
+   @extend .parallaxHome1;
+   margin-top: 5%;
+   background-image: url("../img/exterior1.jpg");
+   .jumboAttached {
+        background-color:transparent; background-color:rgba(0,0,0,0.5);
+        color: white; font-size:2em; width:60%; top:10%; position: relative;
+        margin:0 20%;
+        p {font-size:0.8em}
+    }
+}
+.parallaxHome3 {
+    @extend .parallaxHome1;
+    margin-top: 5%;
+    background: url("../img/buffetalmoco.jpg") left no-repeat, url('../img/imagem5.jpg') right no-repeat;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: $titlesColor;
+    letter-spacing: 0.1em;
+    font-style: italic;
+}
+.imgCozinha, .imgHome {
+    border-radius: 10px; 
+}
+/* section Home */
+.secHome {
+    padding-top:20px; width:100%;
+}
+.imgHome {
+    width: 100%;
+}
+/* end section Home configs */
+
+.hrSections {
+    margin-top:30px;
+    border-color: gray;
+    border-style: solid none;
+    border-width: 1px 0;
+} /*linha divisória dos títulos e contents*/
+/* section Ementa */
+#sectionEmenta { width: 100%; }
+.secEmenta, .secBar, .secEquipa, .secReservas {
+    display:none; opacity: 0; height: 0; text-align:center; padding-top:5px;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;  
+}
+
+.entradas, .carne, .peixe, .massa, .salada {
+    margin: 70px;
+}
+.imgEmenta {
+
+}
+.hItems {
+    padding-top:10%;
+    font-style: italic;
+    color: gray;
+}
+
+/* end section Ementa */
+
+/* section Bar */
+.ulBar {
+    
+    /*background-color: rgba(225,110,1,0.2);*/
+    /*border: 1px groove gray;*/
+    border-radius: 5px;
+    padding: 5%;
+    -webkit-box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 10px black;
+}
+.container-bar {
+    margin-bottom: 3%;
+}
+.imgBar {
+    height: 200px;
+    width: 300px;
+    opacity: 0.9;
+}
+.hBar {
+    @extend .hItems;
+    width:100%; background-color:rgba(0,0,0,0.1);
+    -webkit-box-shadow: 5px 5px 1px gray;
+            box-shadow: 5px 5px 1px gray; border-radius: 5px;
+    text-transform: uppercase; margin-top:2%;
+    padding:1%;
+}
+/* end section Bar */
+
+
+
+/* section Equipa */
+#sectionEquipa { width: 100%; }
+.imgEquipa {
+    width: 50%;
+}
+.rowEquipa {
+    margin: 5%;
+    h5 {
+        color: gray;
+    }
+}
+/* end section Equipa */
+
+
+
+/* section Reservas */ 
+#map {
+    height: 300px; width: 100%; margin-bottom:50px; border:2px solid gray;    
+}
+.FBContacto:hover, .mailContacto:hover {
+    color: $titlesColor;
+}
+.secReservas {
+    padding-bottom: 30%; 
+}
+#sectionReservas {
+    width:100%; height:auto;
+}
+#hReservas { margin-bottom:5%;}
+.col-reservas-esq {
+    background: url('../img/mapa2.jpg') center no-repeat;    
+    .detalhes {
+        color: black; background-color: white; padding:5%; margin-top:10%;
+        opacity: 0.8;
+    }
+}
+.col-reservas-dto { text-align: justify}
+fieldset { border: 1px inset gray; padding:1%;  }
+legend {font-size: 1em; border:1px groove gray; border-radius:999em; padding:2%; }
+input, textarea { width:100%;}
+label { padding-top:3%;}
+/* end section Reservas */
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    /*opacity: 0.2;*/
+    width: 100%;     
+    top:100%;
+    margin-top: 20% !important; 
+    background-color: lightgray;
+    border-top: 1px groove gray;
+    height:150px;
+    text-align: center;
+    .pFooter {
+        padding-top: 1.5%;
+    }
+    .logosFooter {
+        position:absolute; float: right; left:80%;
+        a {
+            -webkit-transition:0.4s ease-in-out;
+            -o-transition:0.4s ease-in-out;
+            transition:0.4s ease-in-out;        
+        }       
+        a:hover{ color: steelblue;}        
+    }
+} /*end footer*/

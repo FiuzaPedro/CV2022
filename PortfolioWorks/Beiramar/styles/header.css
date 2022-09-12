@@ -1,0 +1,143 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1%;
+    text-align: center;   
+    margin-top: 1%; 
+    
+}
+.menuMobile {
+    display: none;
+}
+.logo {    
+    background: url("../img/wave.jpg");  
+    background-repeat: no-repeat;    
+    background-color: white;
+    border-radius: 999em;  
+    text-align: center;
+    padding:1%;
+}
+.logoH {    
+    display: inline;                
+    color:rgb(36, 117, 163);
+    font-family: 'Rye', cursive;
+    font-size: 3em;    
+    
+}
+/*.logoH:hover:before {
+    content:"Home page";
+    position: absolute;
+    top:14%; left:45%;    
+    padding:1%;
+    color:rgb(36, 117, 163);
+    color:white;
+    background-color: rgb(36, 117, 163);
+    border-radius:10px;
+    font-size: 0.5em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}*/
+a {
+    text-decoration: none;
+    color:white;
+    padding:2%;
+}
+a:hover {
+    background-color:rgb(36, 117, 163);
+}
+.aLogo {
+    padding:0%;    
+}
+.aLogo:hover, .aLogo:hover:after {    
+    background-color:transparent;
+    color: transparent;    
+    text-shadow: 1px 1px 50px rgb(36, 117, 163);
+}
+.menu, .menu > *, .header, .nav, .nav a {
+    z-index: 999999 !important;
+}
+ul {        
+    padding:1%;
+}
+ul li {
+    display: inline;
+    font-size: 1.3em; 
+    font-family: 'Sigmar One', cursive;       
+}
+
+@media only screen and (max-width:850px) {
+    .header {     
+        padding: 1%;    
+    }
+    /*início menu mobile configs*/
+    
+    .menuMobile {
+        display: inline-block;
+        cursor: pointer;
+        padding:1%;            
+        width:98%; 
+        background-color: white;
+        color: white;   
+        z-index: 999;
+        border-radius: 10px;
+    }    
+    
+    .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 5px;
+        background-color: /*#333;*/rgb(36, 117, 163);
+        margin: 6px 0 6px 6px;                
+    }
+    .bar1Change {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }    
+    .bar2Change {opacity: 0;}    
+    .bar3Change {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+    /* fim do menu mobile*/
+
+    .logo {    
+        background: url("../img/wave.jpg");  
+        background-repeat: no-repeat;    
+        background-color: white;
+        border-radius: 999em;        
+        padding:2%; 
+    }    
+    .logoH {            
+        font-size: 1.2em;    
+    }
+    .logoH:hover:before {
+        top:7%; left:45%;    
+        padding:1%;        
+        border-radius:10px;
+        font-size: 0.7em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    }
+    a {
+        display: block;
+        text-decoration: none;
+        color:white;
+        /*border:2px solid red;*/
+        padding: 0;
+    }
+    ul {
+        padding:1%;
+        background-color: grey;
+    }
+    ul li {
+        display: block;
+        font-size: 1.1em; 
+    }
+    ul a:not(.burgerMenu) {
+       font-size: 0px;
+    }
+    .listVisible {
+        display: block;
+        padding:1%;
+        height:100%;
+        width: 100%;
+        font-size: 15px;
+    }
+}

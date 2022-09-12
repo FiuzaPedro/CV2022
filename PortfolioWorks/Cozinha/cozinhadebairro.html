@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cozinha de Bairro</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap4/dist/css/bootstrap.min.css">
+    <!-- styles.css -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Font Awesome -->
+    <script defer src="fontawesome5/svg-with-js/js/fontawesome-all.js"></script>
+</head>
+<body class="animated rollIn">
+	<div class="container-fluid">
+
+		<img class="imgLogo" src="img/capa.jpg" alt="logo cozinha de bairro">
+		<!--<hr>-->
+
+		<nav class="navbar navbar-expand-md navbar-light bg-light">		  
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-toggle="tooltip" data-placement="left" title="Menu">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav" id="ulNav">
+		      <li class="nav-item">
+		        <a class="nav-link" id="aHome" href="#sectionHome">HOME <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" id="aEmenta" href="#sectionEmenta">EMENTA</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" id="aBar" href="#sectionBar">BAR</a>
+		      </li> 
+		      <li class="nav-item">
+		        <a class="nav-link" id="aEquipa" href="#sectionEquipa">EQUIPA</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" id="aReservas" href="#sectionReserva">CONTACTO</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+
+		<div class="arrowUp red-tooltip" data-toggle="tooltip" data-placement="left" title="Início"></div>
+		<div class="parallaxHome1">
+			<div class="jumbotron jumboCozinha">
+				<img src="img/cozinhabairro.jpg" alt="cozinha de bairro" class="imgCozinha">		  
+			</div>
+		</div>
+		<div class="container">
+			<section id="sectionHome" class="secHome">
+				<hr>
+				<div class="row rowHome">
+					<div class="col-md-6">
+									<img src="img/mesa.jpeg" alt="mesa do restaurante" class="imgHome">
+								</div>
+								<div class="col-md-6"> 
+									<h3 id="hHome">Bem vindo ao Cozinha de Bairro</h3>
+									<p>Sinta-se em casa na Cozinha de Bairro! Alimentos bem confeccionados a partir de produtos frescos e de boa qualidade. <br> Ambiente aprazível adaptado às suas necessidades. <br> Ementas variadas e adequadas a momentos especiais, sempre a bom preço! <br> Servimos pequenos-almoços, almoços, lanches e jantares sempre a pensar nas suas necessidades! <br><br> Aproveite a nossa campanha: De segunda a sexta experimente o nosso menu de almoço com sopa, prato, bebida, sobremesa e café por 7,5€! <br> Teremos para breve mais novidades para os nossos clientes habituais!
+									</p>
+								</div> 
+								<div class="col-md-12 col-slides"> <hr> <br>
+									<h3>Novidades</h3>
+									<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+									  <ol class="carousel-indicators">
+									    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+									    <li data-target="#carouselIndicators" data-slide-to="1"></li>
+									    <li data-target="#carouselIndicators" data-slide-to="2"></li>
+									  </ol>
+									  <div class="carousel-inner" role="listbox">
+									    <div class="carousel-item active">
+									      <img class="d-block img-fluid" src="img/imagem1.jpg" alt="First slide">
+									      <div class="carousel-caption d-none d-md-block">
+									          <h3 class="animated lightSpeedIn">Imagem 1</h3>
+									          <p class="animated fadeInDown">Foto da mesa posta</p>
+									        </div>
+									    </div>
+									    <div class="carousel-item">
+									      <img class="d-block img-fluid" src="img/imagem2.jpg" alt="Second slide">
+									      <div class="carousel-caption d-none d-md-block">
+									          <h3 class="animated lightSpeedIn">Imagem 2</h3>
+									          <p class="animated fadeInDown">Foto do bar/pastelaria</p>
+									        </div>
+									    </div>
+									    <div class="carousel-item">
+									      <img class="d-block img-fluid" src="img/imagem3.jpg" alt="Third slide">
+									      <div class="carousel-caption d-none d-md-block">
+									          <h3 class="animated lightSpeedIn">Imagem 3</h3>
+									          <p class="animated fadeInDown">Foto artística</p>
+									        </div>
+									    </div>
+									  </div>
+									  
+									</div> <!-- end carouselExample -->
+								</div> <!-- end coluna slideshow -->
+				</div> <!--end row -->
+
+
+
+			</section>	<!-- end section home -->
+
+
+			<!-- section Ementa -->
+			<section id="sectionEmenta" class="secEmenta"> 
+				
+				<h4 id="hEmenta">ENTRADAS</h4>
+				<img class="imgEmenta" src="img/entradas.jpeg" alt="imagem de entradas" width="300px" height="200px">
+				<hr class="hrSections">
+				<div class="row entradas"> 
+					
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+				</div> <!-- end row Entradas --> 
+				<hr class="hrSections">
+				<h4>CARNES</h4>
+				<img class="imgEmenta" src="img/carnes.jpeg" alt="imagem de entradas" width="300px" height="200px">
+				<hr class="hrSections">
+				<div class="row carne">
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+				</div>
+
+				<hr class="hrSections">
+				<h4>PEIXES</h4>
+				<img class="imgEmenta" src="img/peixes.jpeg" alt="imagem de peixes" width="300px" height="200px">
+				<hr class="hrSections">
+				<div class="row peixe">
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+				</div>
+				<hr class="hrSections">
+				<h4>MASSAS</h4>
+				<img class="imgEmenta" src="img/massas.jpeg" alt="imagem de massas" width="300px" height="200px">
+				<hr class="hrSections">
+				<div class="row massa">
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+				</div>
+				<hr class="hrSections">
+				<h4>SALADAS</h4>
+				<img class="imgEmenta" src="img/saladas.jpeg" alt="imagem de saladas" width="300px" height="200px">
+				<hr class="hrSections">
+				<div class="row salada">
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+					<div class="col-md-3 col-sm-12">
+						<h5 class="hItems">TESTE ITEM</h6>
+						<p class="descricao">Descrição breve sobre o produto</p>
+						<p class="preco">€15</p>
+					</div>
+				</div>
+
+			</section> <!-- end Section Ementa --> 
+
+
+
+
+
+
+
+
+
+			<section id="sectionBar" class="secBar"> 
+				<h3 id = "hBar">BAR</h3><br>
+					<div class="container">
+						<div class="container-bar">
+							<img src="img/refrigerantes.jpg" alt="refrigerantes" class="imgBar">
+
+							<h5 class="hBar">Refrigerantes e Águas</h5>					
+							<ul class="ulBar">						
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul> 
+						</div>
+
+						<br>
+
+						<div class="container-bar">
+							<img src="img/cervejas.jpg" alt="cervejas" class="imgBar">
+
+							<h5 class="hBar">Vinhos e Cervejas</h5>					
+							<ul class="ulBar">						
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul> 
+						</div>
+
+						<br>
+
+						<div class="container-bar">
+							<img src="img/licores.jpg" alt="licores" class="imgBar">
+
+							<h5 class="hBar">Licores, Digestivos e Cocktails</h5>					
+							<ul class="ulBar">						
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul> 
+						</div>
+						
+					</div> <!-- end main container na bar section -->
+				
+				
+			</section> <!-- end Section Bar -->
+
+
+
+
+
+
+			<section id="sectionEquipa" class="secEquipa"> 
+				<h3 id = "hEquipa">EQUIPA</h3> <hr class="hrSections">
+				<div class="row rowEquipa">
+					<div class="col-md-6">
+						<img src="img/joao.jpg" alt="joao gomes" class="imgEquipa">
+					</div>
+					<div class="col-md-6 "> 
+						<h3 class="h3Equipa" id="hJoao">João Gomes</h3>
+						<h5>Proprietário e Chef</h5><hr>
+						<p>Texto descritivo sobre funções e talvez um pequeno historial/currículo afim de dar a conhecer as pessoas por detrás do restaurante.
+						</p>
+					</div>
+				</div> <!--end row --> <hr>
+
+				<div class="row rowEquipa">
+					<div class="col-md-6 "> 
+						<h3 class="h3Equipa" id="hPaula">Paula Gomes</h3>
+						<h5>Chef Ajudante</h5><hr>
+						<p>Texto descritivo sobre funções e talvez um pequeno historial/currículo afim de dar a conhecer as pessoas por detrás do restaurante.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="img/paula.jpg" alt="paula gomes" class="imgEquipa">
+					</div>					
+				</div> <!--end row --> <hr>
+
+				<div class="row rowEquipa">
+					<div class="col-md-6">
+						<img src="https://placeholdit.co//i/300x200" alt="zeza lopes" class="imgEquipa" >
+					</div>
+					<div class="col-md-6 "> 
+						<h3 class="h3Equipa" id="hZeza">Zéza Lopes</h3>
+						<h5>Ajudante de Cozinha</h5><hr>
+						<p>Texto descritivo sobre funções e talvez um pequeno historial/currículo afim de dar a conhecer as pessoas por detrás do restaurante.
+						</p>
+					</div>
+				</div> <!--end row --> <hr>
+
+				<div class="row rowEquipa">
+					<div class="col-md-6 "> 
+						<h3 class="h3Equipa" id="hTeamMember">Another team member</h3>
+						<h5>Chef Ajudante</h5><hr>
+						<p>Texto descritivo sobre funções e talvez um pequeno historial/currículo afim de dar a conhecer as pessoas por detrás do restaurante.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="https://placeholdit.co//i/300x200" alt="exemplo" class="imgEquipa">
+					</div>					
+				</div> <!--end row --> <!-- ver posteriormente se ao colocar um container isto melhora-->
+
+
+
+			</section> <!-- end Section Equipa -->
+
+
+
+
+
+
+
+
+
+
+
+
+			
+				<section id="sectionReservas" class="secReservas"> 					
+					<h3 id = "hReservas">CONTACTO</h3> <hr>
+					<div class="container">
+						<div class="row rowReservas"> 
+							<div class="col-md-4 col-reservas-esq">
+								<div class="detalhes">
+									<h6>Horário de Funcionamento:</h6>
+									<p>Segunda Feira a Sábado, 9h-18h <br>
+									Exceptuando jantares com reserva, que fecha às 23h</p>
+								</div> <!--  end detalhes -->
+							</div> <!-- end col-reservas-esq -->
+							<div class="col-md-8 col-reservas-dto">
+								<h5> Entrar em contacto:</h5>
+								<form action="#">
+									<fieldset>
+										<legend> &nbsp;Detalhes de Contacto</legend>
+										<label for="nome">Nome:</label>
+										<input id="nome" type="text" class="inputContacto" placeholder="Nome">
+										<label for="mail">Mail:</label>
+										<input id="mail" type="mail" class="inputContacto" placeholder="E-Mail">
+										<label for="assunto">Assunto:</label>
+										<input id="assunto" type="text" class="inputContacto" placeholder="Assunto">
+										<label for="conteudo">Texto:</label>
+										<textarea name="conteudo" id="conteudo" cols="30" rows="5" placeholder="Texto a enviar"></textarea>
+										<button id="submeterContacto">Enviar</button>
+									</fieldset>
+								</form>
+
+							</div>							
+						</div> <!-- end row reservas -->
+						<hr>
+						<div class="row rowReservas">						
+							<div class="col-md-12 col-reservas">
+								<h5>Como chegar:</h5>
+								<p>
+									<b>Transportes Públicos:</b><br>
+									Autocarros da Carris: 732, 728 e 714
+								</p>
+								<h5>Localização:</h5>
+								<p>
+									<b>Morada:</b><br>
+									Rua Alda Nogueira, 2 Loja 1
+									Lisbon, Portugal<br>
+									<b>Telefone:</b><br>
+									21 933 7872
+									<br>
+									<b>Rede Social / Mail:</b>
+									<br> 
+									<a class="FBContacto" href="https://www.facebook.com/cozinhadebairro/" data-toggle="tooltip" data-placement="bottom" title="Facebook oficial do Cozinha de Bairro" target="_blank">
+										<i class="fab fa-facebook-square fa-2x"></i>
+									</a>
+									<a class="mailContacto" href="mailto:geral@cozinhadebairro.pt
+		" data-toggle="tooltip" data-placement="bottom" title="E-Mail do Cozinha de Bairro" target="_blank">
+							<i class="fas fa-envelope-square fa-2x"></i>
+									</a>	
+								</p>
+								<h5>Mapa:</h5>
+								<div id="map"></div> <!-- fim mapa -->
+							</div>						
+					</div> <!-- end container -->
+				</section> <!-- end Section Reservas -->
+			
+
+
+
+
+
+		<!-- </div>  end main container  -->
+		
+
+		<div class="parallaxHome2">
+			<div class="jumbotron jumboAttached">
+				<h3>Eventos e Festas</h3>			  
+			  <p id="pHome">Ao longo do ano vão decorrendo eventos especiais conforme a época respectiva, seja Natal, Carnaval, Dia de S.Valentim entre outros, onde primam menus Especiais e mesmo Festas e Música ao vivo.</p>			  
+			</div>
+		</div> <!-- remover este div parallax ou editar conforme se navega -->
+		<div class="parallaxHome3">
+			<footer class="footerCozinha">
+				<p class="pFooter">
+					Cozinha de Bairro &nbsp; 
+					<span class="logosFooter">
+						<a class="aFB" href="https://www.facebook.com/cozinhadebairro/" data-toggle="tooltip" data-placement="bottom" title="Facebook oficial do Cozinha de Bairro" target="_blank">
+							<i class="fab fa-facebook-square fa-2x"></i>
+						</a>
+						<a class="aMail" href="mailto:geral@cozinhadebairro.pt
+		" data-toggle="tooltip" data-placement="bottom" title="E-Mail do Cozinha de Bairro" target="_blank">
+							<i class="fas fa-envelope-square fa-2x"></i>
+						</a>
+						<span data-toggle="tooltip" data-placement="bottom" title="Telefone: 21 933 7872"><i class="fas fa-phone-square fa-2x"></i></span>
+					</span>
+					<br>Rua Alda Nogueira, 2 Loja 1, Lisboa<br>
+					Telefone: 21 933 7872 <br>
+					<br>&copy; 2017 criado por Pedro Fiúza	
+				</p>
+
+			</footer>			
+		</div>
+	
+	</div> <!-- Main container -->
+
+	
+			
+	
+
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="bootstrap4/assets/js/vendor/jquery-slim.min.js"></script>-->
+    <script src="bootstrap4/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap4/dist/js/bootstrap.min.js"></script>
+    <script src="js/inits.js"></script>    
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- google map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9o3VTtQ3XeVWBfxs32SZj1Juwu0gI_1s&callback=initMap""
+  async defer></script>
+  	<script src="js/map.js"></script>
+  
+</body>
+</html>

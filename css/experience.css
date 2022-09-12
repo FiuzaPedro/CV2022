@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+.hExp {
+    color: #3aafa9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 1.8em;
+
+}
+
+#sectionExperience {
+    border: 2px outset #ffefff;
+    padding: 2%;
+    box-shadow:
+        inset 1px 1px 50px #3aafa9;
+    background-color: white;
+
+}
+
+.xpContainer {
+    margin: 15% 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.road {
+    border: 2px dashed white;
+    height: 0;
+    width: 100%;
+    align-self: center;
+}
+
+.imgFiuza {
+    position: relative;
+    width: 60px;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.locals {
+    position: absolute;
+    height: 0px;
+    top: -10%;
+    z-index: 9;
+    /* border: 1px solid black; */
+    transition: 0.7s ease-in-out all;
+    font-family: 'Kanit';
+    font-size: 1.1em;
+}
+
+.locals:hover {
+    box-shadow: 2px 2px 20px black;
+    cursor: pointer;
+    transition: 0.2s linear all;
+    transform: scale(1.2);
+}
+
+.inete {
+    top: -85px;
+    left: 150px;
+}
+
+.inete::before {
+    content: "1998 / 2002";
+    top: -30%;
+
+}
+
+.flag {
+    top: 80px;
+    left: 300px;
+}
+
+.flag::before {
+    content: "2015-2016";
+    bottom: -30%;
+}
+
+.cinel1 {
+    top: -85px;
+    left: 450px;
+}
+
+.cinel1::before {
+    content: "2018";
+    top: -30%
+}
+
+.cinel2 {
+    top: 80px;
+    left: 600px;
+}
+
+.cinel2::before {
+    content: '2019';
+    bottom: -30%;
+}
+
+.cinel3 {
+    top: -85px;
+    left: 750px;
+}
+
+.cinel3::before {
+    content: '2020';
+    top: -30%;
+}
+
+.academia {
+    top: 0px;
+    left: 80%;
+}
+
+.locals img {
+    height: 100%;
+    width: 100px;
+}
+
+.academia img {
+    width: 100%;
+}
+
+.inete,
+.cinel1,
+.cinel3 {
+    border-top: 4px solid black;
+    border-left: 2px inset black;
+    border-right: 2px inset black;
+}
+
+.flag,
+.cinel2 {
+    border-bottom: 4px solid black;
+    border-left: 2px inset black;
+    border-right: 2px inset black;
+}
+
+.inete::before,
+.cinel1::before,
+.cinel2::before,
+.cinel3::before,
+.flag::before {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+    font-weight: bolder;
+}
+
+.originalHeight {
+    height: 80px;
+}
+
+.pInfo {
+    background-color: white;
+    width: 50%;
+    margin-top: -5%;
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.pInfo span {
+    background-color: black;
+    color: white;
+    padding: 1%;
+    box-shadow: -2px 2px 2px black;
+}
+
+
+
+
+
+
+/* Modal window main config*/
+#modalCourses {
+    z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 2%;
+    margin: 0 20%;
+    width: 50%;
+    height: auto;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.99);
+    color: black;
+    /* background-image: url("../img/room1smaller.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black,
+        5px 5px 10px white,
+        10px 10px 10px black,
+        15px 15px 10px gray,
+        20px 20px 10px black;
+}
+
+.academiaTextColor {
+    margin-top: 2%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    padding: 3%;
+}
+
+.academiaTextColor h1 {
+    color: white;
+    margin-bottom: 10%;
+}
+
+.academiaTextColor p {
+    line-height: 1.3em;
+}
+
+.academiaTextColor strong {
+    color: gold;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modalClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1.5%;
+    border: none;
+    background-color: transparent;
+}
+
+.iconClose {
+    font-size: 50px;
+    color: black;
+}
+
+.iconClose:hover {
+    color: gold;
+}
+
+.h1Courses {
+    color: gray;
+}
+
+.h1Courses,
+.pCourses h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.pCourses {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.pCourses h3 {
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.hInete {
+    background-color: rgb(11, 150, 34);
+    color: white;
+}
+
+.hFlag {
+    background-color: orangered;
+    color: white;
+}
+
+.hCinel {
+    background-color: lightgray;
+    color: darkblue;
+}
+
+.hAcademia {
+    background-color: red;
+}
+
+
+/*star 5 corners css*/
+#star-five {
+    margin: 0;
+    position: absolute;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid gold;
+    border-left: 100px solid transparent;
+    transform: scale(0.5);
+    top: 20%;
+    animation-name: animStar;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animStar {
+    0% {
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(0.5) rotate(360deg);
+    }
+}
+
+#star-five:before {
+    border-bottom: 80px solid gold;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+#star-five:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid gold;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}

@@ -1,0 +1,43 @@
+#contactos {
+    height:1200px;
+}
+form {
+    background-color: rgba(255, 255, 255, 0.459);
+    background: url("")
+    color: rgb(36, 117, 163);
+    padding:2%;
+    border:4px double rgb(36, 117, 163);
+}
+textarea, input {
+    display: block;
+    border-radius: 5px;
+    padding: 0.5%;
+    font-size: 1.3em;
+    font-family: 'Nanum Brush Script', cursive;
+}
+textarea {
+    resize: vertical;
+    width:70%; 
+}
+input:focus, textarea:focus {
+    outline:none;
+    border:2px solid rgb(36, 117, 163);
+}
+input[type="submit"] {
+    margin-top:2%;
+    padding:1%;     
+    background-color: white;
+    color: rgb(36, 117, 163);
+    border-radius:15px;
+    font-size: 1.1em;    
+    z-index: 99999em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#submeter:hover {
+    background-color: rgb(36, 117, 163);
+    color: white;
+    cursor: pointer;    
+}
+#mapa {
+    border:4px double rgb(36, 117, 163);
+}

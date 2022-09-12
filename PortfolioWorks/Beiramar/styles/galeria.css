@@ -1,0 +1,152 @@
+/*config da lista numerada da galeria*/
+.hGaleria {
+    background-color: white;
+    padding:1%;
+    width:25%; text-align: center;
+}
+#galeria {
+    background: url("../img/galeriaS.jpg") no-repeat center; /*Photo by Igor Starkov from Pexels*/    
+    margin-bottom: 100px;
+}
+#ulGaleria {           
+    border: 2px inset rgb(36, 117, 163);
+    background-color: rgba(36, 117, 163, 0.6);  
+    height: 800px;
+}
+
+#ulGaleria > li {
+    display: inline;    
+    outline: 2px solid black;
+}
+
+#ulGaleria img {
+    width: 200px !important; height: 150px !important;      
+}
+#ulGaleria img:hover {
+    outline: 2px ridge gold;
+    box-shadow: 4px 4px 40px gold;
+    cursor: pointer;
+    transform:scale(1.4);    
+}
+.divGalerias {
+    float: left;
+    margin:5px 2%;
+    width:200px;   
+    outline: 2px double white; 
+}
+.pCaption {
+    color:rgb(36, 117, 163);    
+    background-color: white;
+    font-size: 1.5em; text-align: center;
+    margin-top:0%;
+    margin-bottom: 0%;
+    width: 200px;    
+    font-family: 'Nanum Brush Script', cursive;    
+}
+
+#lightbox {
+    opacity: 0;
+    border:2px solid gray;
+    box-shadow: 0 0 20px rgb(36, 117, 163);
+    position: fixed;
+    top:1%;
+    left:20%;
+    width:60%;    
+    height:600px;
+    background-size: 100% 100%;
+    z-index: -1;
+    background-color: red;
+}
+.close {    
+    position: absolute;
+    color:gold;
+    background-color:gray;    
+    padding: 1%;
+    right:0%;
+    text-transform: uppercase; letter-spacing: 1px; font-weight: bold;
+    border-bottom-left-radius: 20px;
+}
+.close:hover {
+    color: wheat;
+    background-color: rgb(36, 117, 163);
+    cursor: pointer;
+}
+.separador { /*tentativa de separar o footer da galeria com um div sem nada*/
+    height:200px;
+}
+
+
+/*media query galeria*/
+@media only screen and (max-width:800px) {
+    #galeria {
+        height: 3600px;
+        background:
+            url("../img/galeriaS.jpg") no-repeat,
+            url("../img/staffS.jpg") center no-repeat,
+            url("../img/galeria2.jpeg") center no-repeat,
+            url("../img/galeria3.jpeg") bottom no-repeat;
+        background-size: 100% 34%, 100% 34%, 100% 34%, 100% 34%;        
+    }    
+    .hGaleria {
+        font-size: 1.3em;
+        padding:2%;
+        background-color: white;        
+        width:40%; text-align: center;
+        border:2px groove rgb(36, 117, 163);
+        
+    }
+    
+    #ulGaleria {
+        
+        background-color: transparent;       
+        border:none;
+    }
+    .divGalerias {
+        /*clear: both;*/
+        text-align: center;
+        width:100%;
+        margin-top:5%;
+        outline:none;
+    }
+    #ulGaleria img {        
+        width: 50% !important; height: 20% !important;      
+    }
+    #ulGaleria img:hover {
+        outline: 1px ridge gold;
+        box-shadow: 2px 2px 30px gold;        
+        transform:scale(1.2);    
+    }
+    .pCaption {
+        width: 50%;
+        margin:0 25%;
+        font-size: 1.5em;
+    }
+    #lightbox {
+        top:5%;
+        left:5%;
+        width:90%;    
+        height:400px;
+        background-size: 100% 100%;
+        z-index: -1;
+        background-color: red;
+    }
+}
+@media only screen and (max-width: 500px) {    
+    #galeria {
+        height: auto;
+        background:none;         
+    }
+    #ulGaleria img {
+        width: 60% !important; height: 20% !important;      
+    }
+    .pCaption {
+        width: 60%;
+        margin:0 20%;
+        font-size: 1.5em;
+    }
+    #ulGaleria img:hover, #ulGaleria img:focus {
+        outline: none;
+        box-shadow: 2px 2px 30px gold;        
+        transform:scale(1);    
+    }
+}

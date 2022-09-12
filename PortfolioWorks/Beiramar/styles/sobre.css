@@ -1,0 +1,24 @@
+#sobre {
+    background: url("../img/restaurant.jpg") 100% 100% no-repeat;
+    height: 100%;    
+}
+#sobre h1 {
+    background-color: white;
+    padding:1%; width:20%;
+    text-align: center;
+    border-radius: 10px;
+}
+.h4Sobre {
+    text-align: center;
+    background-color: white;
+    padding:1%;
+}
+@media only screen and (max-width:800px) {
+    #sobre {        
+        background-size: 100% 100%;
+    }
+    #sobre h1 {
+        background-color: transparent;
+        width:100%;
+    }
+}

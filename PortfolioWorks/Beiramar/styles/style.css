@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
+@import url('https://fonts.googleapis.com/css?family=Rye');
+
+* {
+    transition: all ease-in-out .4s;
+}
+.activeLink {
+    background-color: rgb(36, 117, 163);    
+}
+body{
+    background-color: rgb(63, 65, 70);
+}
+.clear {
+    clear: both;
+}
+h1, h4, p, h5 {
+    color: rgb(36, 117, 163);
+    font-family: 'Sigmar One', cursive;
+}
+
+h1 {
+    text-transform: uppercase;    
+}
+.content {
+    /*background-color: rgb(180, 168, 100);*/
+    background-image: url("../img/fundo.jpg"), url("../img/restaurant.jpg");
+    background-repeat: no-repeat , no-repeat;
+    background-size: 100% 100%, 100% 100%;
+    background-position: top, bottom;
+    background-attachment: fixed, fixed;
+    height:1000px; 
+    padding:2%; /*atenção a este padding que afecta o layout geral dos contents todos*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#main {
+    height:500px;
+}
+.pContent {
+    background-color: whitesmoke;
+    background-color: rgba(255,255,255, 0.7);
+    padding:2%;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5em;
+}
+#footer {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.3em;
+    border-top:1px double white;
+    position: fixed;
+    margin-top:2000px;
+    bottom:0;
+    width:100%;
+    padding:1%;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;    
+}
+#spanUp {
+    height:20px;
+    width:20px;
+    position: absolute;
+    bottom:30%;
+    right:10%;
+    transform: rotate(45deg);
+    border-top:4px solid white;
+    border-left:4px solid white;
+    cursor: pointer;    
+}
+#spanUp:hover {
+    border-top-color: rgb(36, 117, 163);
+    border-left-color: rgb(36, 117, 163);
+
+}
+
+@media only screen and (max-width:800px) {
+    h1 {
+        text-align: center;
+        font-size: 1.5em;
+        background-color: white;
+    }
+}

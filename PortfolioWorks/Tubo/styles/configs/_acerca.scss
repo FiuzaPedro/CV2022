@@ -1,0 +1,54 @@
+#sectionAcerca {
+	background-color: steelblue;
+	padding:3%;
+}
+.acercaCentral {
+	width:60%; margin:5% 17.5%;	
+	outline:20px solid $corTexto;
+	background-image:url("../img/tuboentrance.jpg");
+	background-size: 100% 100%;
+	background-size: cover;
+
+ 	.acercaBox {
+ 		padding:5%; 		
+ 		background-color: $corTexto;
+ 		opacity: 0.7
+ 	}
+ 	h2 {
+ 		background-color: $corHover; padding:3%;
+ 	}
+ 	h2, p {
+		color:$corFundo !important;
+ 	}	
+ 	p {  		
+ 		font-family: 'Kreon', serif;
+ 		font-size:1.5em;
+ 		line-height: 2em;
+ 	}
+}
+
+
+//media query acerca
+@media only screen and(max-width: 850px) {
+	#sectionAcerca {		
+		padding:10%;
+	}
+	.acercaCentral {
+		width:100%; margin:0;	
+		outline:10px solid $corTexto;
+		background-image:url("../img/tuboentrance.jpg");		
+
+	 	.acercaBox {
+	 		padding:3%; 		
+	 		background-color: $corTexto;
+	 		opacity: 0.7
+	 	}
+	 	h2 {
+	 		padding:3%;
+	 	}	 	
+	 	p { 	 		
+	 		font-size:1.2em;
+	 		line-height: 1.5em;
+	 	}
+	}
+}

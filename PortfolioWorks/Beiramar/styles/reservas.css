@@ -1,0 +1,191 @@
+#reservas {
+    height:1200px;
+    background: url("../img/mesas.jpeg") no-repeat 100% 100%;
+}
+.frmReservas {
+    background-color:lightgray;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding:1%;
+    
+}
+.frmReservas > * {
+    display: block;
+}
+input, select {
+    width: 200px;
+    padding:0.5%;
+    font-size:16px;
+}
+textarea {
+    text-align: left;
+}
+#observacoes {    
+    width:50%;
+    resize: vertical;
+}
+fieldset {
+    padding:1%;
+    /*padding-bottom:2%;*/
+    background-color: rgba(255, 255, 255, 0.5);    
+}
+.fieldRes {
+    margin:2% 0;
+}
+
+.foodwrapper {
+    background-color: rgba(255, 255, 255, 0.8);  
+    margin-bottom: 4%;  
+    padding:1%;    
+}
+.divSeparadorEmenta {
+    margin-top:-3%;
+}
+.foodwrapper div {
+    border:2px solid transparent;  
+    display: flex;     
+    justify-content: space-evenly;        
+}
+.foodwrapper div > * {
+    width:200px;
+}
+
+.foodwrapper input[type="text"] {
+    
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+}
+.labelsFood {
+    
+}
+.prato {
+    height:25px !important;    
+    width:25px;    
+}
+
+#btnReserva {
+    margin-bottom: 200px;
+}
+/*div que resulta do btn Submeter */
+.divRes {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 1.5em;
+    margin:1% 5%;
+    width:85%;
+    background-color: white ;
+    padding:2%;
+    border: 2px double rgb(43, 72, 110);
+    color:rgb(36, 117, 163);
+    font-weight: bold;
+    margin-bottom: 200px;
+    position: absolute;
+    top:100px; 
+    z-index:999;
+}
+.fecharConfirma {    
+    position: absolute;
+    top:40px;
+    right:80px;
+    padding:1%; border:2px double rgb(36, 117, 163);
+    border-radius:999em;
+    cursor: pointer;
+}
+.fecharConfirma:hover {
+    background-color: rgb(36, 117, 163);
+    color:white;
+}
+
+.divRes h3 {
+    display: inline;
+    color:black;
+}
+.divRes hr {
+    background-color:rgb(36, 117, 163);
+    height: 2px;
+}
+/*end div que resulta do btn submeter*/
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media only screen and (max-width:800px) {
+    #reservas {
+        height:950px;
+    }    
+    .frmReservas > * {
+        display: block;
+    }
+    input, select {
+        width: 200px;
+        padding:1.5%;
+        font-size:0.9em;
+        display: inline;
+    }
+    textarea {
+        text-align: left;
+    }
+    #observacoes {            
+        width:98%;
+    }
+    fieldset {
+        padding:1%;
+        text-align: center;
+        padding-bottom:2%;
+        background-color: rgba(255, 255, 255, 0.5);    
+    }    
+    .divSeparadorEmenta {
+        margin-top:-3%;
+    }    
+    .foodwrapper, .foodwrapper > * {
+        text-align: center;
+    }
+    .foodwrapper div {
+        /*display: inline; */       
+    }    
+    .divSeparadorEmenta, h5 {
+        display: none;        
+    }
+    label {
+        font-size: 0.7em;    
+        display: block;
+        text-align: center;
+    }        
+    .prato {
+        height:15px !important;    
+        width:15px;    
+    }
+    
+    .quant {
+        width: 80px !important;
+    }
+
+    #btnReserva {
+        margin-bottom: 200px;
+    }
+
+    /*div que resulta do btn Submeter */
+    .divRes {        
+        font-size: 1.2em;
+        margin:1%;
+        width:85%;        
+        padding:2%;                
+        top:100px;         
+    }
+    .fecharConfirma {    
+        position: absolute;
+        top:20px;
+        right:30px;        
+    }            
+}

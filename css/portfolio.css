@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Karla:400,700');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#sectionPortfolio {
+    background-color: white;
+}
+
+.hPortfolio {
+    text-align: center;
+    padding: 2.5%;
+    padding-top: 5%;
+    background-color: teal;
+    color: white;
+}
+
+.galleryContainer {
+    margin: 0 auto;
+}
+
+#gallery {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.gallery-item {
+    position: relative;
+    display: flex;
+    transition: 0.6s linear all;
+    border: 2px solid teal;
+    width: 300px;
+    height: 300px;
+    margin: 2%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imgPortfolio {
+    height: 100%;
+    width: 100%;
+}
+
+.gallery-item:hover {
+    transform: translate(-10px);
+    box-shadow: 10px 10px 10px rgba(0, 139, 139, 0.6);
+}
+
+.gallery-item:hover>h2 {
+    height: 100%;
+    width: 100%;
+    padding: 20%;
+    border-radius: 999em;
+}
+
+.gallery-item:hover>.pDescription {
+    opacity: 1;
+}
+
+#buttons button {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.hCaption {
+    margin-top: 0;
+    position: absolute;
+    background-color: rgba(0, 139, 139, 0.8);
+    color: white;
+    font-size: 1em;
+    font-family: 'Montserrat', sans serif;
+    transition: 0.9s ease-in-out all;
+    cursor: pointer;
+    height: 30px;
+    width: 250px;
+    border-bottom-right-radius: 10px;
+}
+
+.pDescription {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    top: 50%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.9s ease-in-out all 0.8s;
+
+}
+
+.shopcontent {
+    z-index: 1;
+}
+
+/*filter tag buttons*/
+#buttons {
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 2%;
+    padding: 20px;
+    text-align: center;
+}
+
+#buttons>button {
+    font-family: 'Karla', sans-serif;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    transition: all 0.35s ease-in-out;
+}
+
+#buttons>button.active,
+#buttons>button:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+/*end filter tag buttons*/
+
+/*portfolio modal window with iframe with current link*/
+.modalPortfolio {
+
+    height: 0px;
+    width: 0px;
+    margin: 2%;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    transition: 0.8s ease-in-out all;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.iFrameCurrent {
+    width: 100%;
+    height: 0px;
+    border-radius: 10px;
+    transition: linear 0.7s all;
+}
+
+.modalOn {
+    height: 90%;
+    width: 90%;
+    padding: 2%;
+    z-index: 1000;
+}
+
+.turnOff {
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    padding: 1.5%;
+    font-weight: bolder;
+    border: 2px solid white;
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+.turnOff:hover {
+    color: yellow;
+    cursor: pointer;
+}

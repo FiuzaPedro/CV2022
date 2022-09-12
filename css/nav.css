@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Chango&family=Kanit&display=swap');
+
+nav {
+    background-color: #2b7a78;
+    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 120px;
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Kanit';
+}
+
+nav:hover {
+    background-color: #2b7a78;
+}
+
+.titleContainer {
+    position: absolute;
+    margin: 1.5%;
+    padding: 1%;
+    top: 0;
+    left: 0;
+    z-index: 9989;
+    border-radius: 5px;
+    background-color: #3aafa9;
+    box-shadow: inset 1px 1px 10px #17252A;
+    font-family: 'Chango', cursive;
+
+}
+
+.titleContainer {
+    color: black;
+    font-size: 2em;
+    line-height: 20px;
+}
+
+.titleContainer span {
+    color: #feffff;
+}
+
+.linksContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav a {
+    font-size: 1.1em;
+    padding: 2%;
+    font-weight: bold;
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #17252A;
+    border: 2px solid #feffff;
+    border-radius: 999em;
+    transition: all 0.4s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: inset 2px 2px 10px #feffff;
+    margin: 0 2%;
+}
+
+nav a:last-child {
+    margin-right: 10%;
+}
+
+nav a:hover {
+    /* background-color: rgb(177, 27, 52); */
+    background-color: #3aafa9;
+}
+
+.burgerMenu {
+    display: none;
+}

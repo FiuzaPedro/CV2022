@@ -1,0 +1,136 @@
+#sectionContacto {
+	h1 {
+		color:$corFundo;
+	}
+	.contactWrapper{				
+		text-align: center;
+		margin-top: -4%;
+	}	
+	
+	.divContact {		
+		padding: 2.5% 0;
+		//border:2px solid red;
+		background-image: url("../img/contact.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+	.mapa {				
+		//border:2px solid green;
+		margin: 2% 0;	
+		border-radius:20px;
+		border:20px inset gray;
+		box-shadow:0 0 10px lightgray;
+		iframe {			
+			width:100%; height:400px;			
+		}
+	}
+	.clear {
+		clear: both;
+	}
+	form {	
+	text-align: center;	
+		input {
+			margin-left: 30%;
+			width:40%;
+			display: block; border-radius: 10px;
+			padding:1%;
+			font-size: 1em;			
+			 background:-webkit-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			 background:-o-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			 background:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+		}
+		
+		input, textarea {
+			color:$corTexto; font-family: 'Kreon';
+			&:focus {
+				outline:none; border:0.5px outset lightblue;
+			}
+		}
+		input[type="button"] {
+			font-family: $titlefont;
+			color: $corTexto; margin:5% 0; border: 1px solid black;
+			font-weight: bolder; letter-spacing: 2px;
+			margin-left: 30%;
+			width:40%;
+			@include transition(all ease-in-out 0.7s);
+			&:hover {
+				cursor: pointer;
+				background: none;background-color: $corTexto; 
+				color:$corHover;
+
+			}
+		}
+		label, .pTextarea span {
+			font-family: 'Luckiest Guy', cursive;
+			color: $corTexto;	
+			background-color: rgba(0,0,0,0.4);		
+		}
+
+		textarea {
+			resize: none;	
+			width:55%;				
+			font-size: .9em;
+			background:-webkit-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			background:-o-linear-gradient(51deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+			background:linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+@media only screen and(min-width: 850px) {	
+	#sectionContacto {			
+		.contactWrapper{				
+			text-align: center;			
+			margin-top: 0;
+		}	
+		
+		.divContact {					
+			padding: 1.5% 0;
+			width:45%;
+			height:400px;
+			
+		}
+		.divContact, .mapa {
+			float: left;
+			margin-left: 5%;
+			margin-bottom: 10%;
+		}
+		.mapa {				
+			border: none;
+			width:40%;
+			margin-top: 0.1%;							
+			box-shadow:0 0 10px lightgray;	
+			iframe {
+				border:20px inset white;
+			}		
+		}
+		
+		form {	
+					
+			input, textarea {
+				color:$corTexto; font-family: $titlefont;				
+			}
+			input[type="button"] {
+				font-family: $titlefont;
+				color: $corTexto; margin:5% 0; border: 1px solid black;
+				font-weight: bolder; letter-spacing: 2px;
+				margin-left: 30%;
+				width:40%;				
+			}
+			
+		}
+		
+	}
+	
+
+} //end query

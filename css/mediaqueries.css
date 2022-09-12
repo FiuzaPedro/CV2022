@@ -1,0 +1,235 @@
+/*mobile styles*/
+
+/*mobile menu*/
+@media screen and (max-width:800px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .upArrow {
+        display: block;
+        position: fixed;
+        bottom: 5%;
+        /* right: 47%; */
+        left: 80%;
+        width: 20%;
+        /* border: 2px solid #Def2f1; */
+        z-index: 9999999999;
+        background-color: transparent;
+        text-align: center;
+        opacity: 0;
+        transition: 0.7s ease-in-out all;
+    }
+
+
+    .iconArrow {
+        color: white;
+        font-size: 3em;
+        animation-name: animIcon;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+        z-index: 9999999999;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+    }
+
+
+    @keyframes animIcon {
+        0% {
+            transform: translate(0px, 0px);
+        }
+
+        50% {
+            transform: translate(0px, -20px);
+        }
+
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .titleContainer {
+        position: absolute;
+        top: 0;
+        left: 1%;
+        z-index: 9989;
+        padding: 0%;
+        width: auto;
+        background-color: #3aafa9;
+    }
+
+    .titleContainer p {
+        font-size: 1.2em;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+        height: 20px;
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+        z-index: 9989;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+        transform: rotate(-45deg) translate(-4px, 4px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-6px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+    nav {
+        background-color: #2b7a78;
+        margin: 0 auto;
+        width: 100%;
+        /* position: absolute; */
+        top: 0;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .linksContainer {
+        position: absolute;
+        top: 10%;
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 2px inset #Def2f1; */
+        background-image: url('../img/homeimg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 300%;
+        transition: all ease-in-out 0.8s;
+
+    }
+
+    .linksInside {
+        margin-left: 0;
+    }
+
+    nav a {
+        padding: 4%;
+        width: 92%;
+        border-radius: 5px;
+        /* box-shadow: inset 2px 2px 10px #feffff; */
+        opacity: 0.6;
+
+    }
+
+    nav a:last-child {
+        margin-right: 2%;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        opacity: 1;
+    }
+
+    .imgsContainer {
+        display: none;
+    }
+
+    .bodyTitleContainer {
+        margin: 30% auto;
+        width: 100%;
+        height: 70%;
+        text-align: center;
+
+    }
+
+    .techContainer {
+        margin-top: 20%;
+        padding: 10%;
+        border: 2px inset teal;
+        border-radius: 50%;
+    }
+
+    .miniImg {
+        width: 20%;
+        height: 30%;
+        padding: 1%;
+    }
+
+    .imgTechs {
+        height: 50px;
+        width: 50px;
+        border-radius: 45%;
+        padding: 2%;
+    }
+
+
+    /*Main content <main>*/
+    #mainContent {
+        margin-top: 150%;
+        padding-top: 5%;
+        left: 0;
+        width: 100%;
+        top: 75%;
+        position: relative;
+        z-index: 1;
+    }
+
+
+
+    /*about  mobile styles */
+    #sectionAbout {
+        /* position: relative; */
+        /* top: 100%; */
+        border: none;
+        background-color: transparent;
+        margin-top: 20%;
+        height: 500px;
+        max-width: 100%;
+        width: 96%;
+        padding: 2%;
+        z-index: 3;
+        background-image: url('../img/pracachillin.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .h1About {
+        /* color: lightgrey; */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #ffefff;
+        text-shadow: -10px 2px 5px #3aafa9;
+        text-align: right;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 1%;
+    }
+
+    .pAbout {
+        padding: 2%;
+    }
+
+    /* footer mobile styles */
+    footer {
+        /* z-index: 999999999999999; */
+    }
+
+
+}

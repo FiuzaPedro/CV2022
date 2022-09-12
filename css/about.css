@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+#sectionAbout {
+    height: 500px;
+    /* max-width: 100%; */
+    /* width: 80%; */
+    margin: 4% auto;
+    border: 1px solid white;
+    background-color: #def2f1;
+    background-image: url('../img/fiuzastylemonsanto.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    padding: 2%;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.h1About {
+    color: #3aafa9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pAbout {
+    position: relative;
+    font-family: 'Kanit';
+    color: #ffefff;
+    font-style: italic;
+    padding: 10%;
+    background-color: #3aafa9;
+    line-height: 2em;
+    opacity: 0.9;
+}
+
+@media screen and (min-width:800px) {
+    .pAbout::before {
+        position: absolute;
+        content: '"';
+        left: 6%;
+        font-size: 3em;
+    }
+
+    .pAbout::after {
+        position: absolute;
+        content: ' " ';
+        font-size: 3em;
+    }
+}

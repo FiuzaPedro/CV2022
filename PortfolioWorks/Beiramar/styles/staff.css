@@ -1,0 +1,45 @@
+.content {
+    background: none;
+}
+#staff {
+    background:url("../img/staffS.jpg") 45% 35% no-repeat;
+    /*Photo by quan le on Unsplash*/    
+}
+
+/*config da tabela do staff*/
+.imgStaff {
+   width: 70%; height: 200px;
+}
+.imgStaff:hover{
+    transform: scale(1.5) translate(-20%, -10%);
+
+}
+table {
+    border:1px solid rgb(36, 117, 163);
+    background-color: rgba(0,0,0,0.5);    
+    width:100%;
+    color: white;
+    font-family: 'Sigmar One', cursive;
+}
+td {
+    text-align: center;
+    padding: 1%;
+    height:40px;
+    width:20%;    
+    background-color: rgba(36, 117, 163, 0.5);    
+}
+
+
+@media only screen and (max-width:800px) {
+    td{
+        font-size:0.9em;
+        padding:0;
+    }
+    .imgStaff {
+        width: 100%; height: 200px;
+     }
+     .imgStaff:hover{
+        transform: scale(1.1) translate(0, 0);
+    
+    }
+}

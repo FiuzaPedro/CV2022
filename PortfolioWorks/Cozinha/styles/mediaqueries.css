@@ -1,0 +1,112 @@
+/*Media Query*/
+@media only screen and (max-width: 800px) {
+h1 h2 h3 h4 h5 h6 {
+	font-size: 0.8em;
+}
+* {
+	font-size: 1em;
+}
+.imgLogo {
+	display: none;
+}
+.arrowUp{
+    width:25px; height:25px;    
+     bottom:6%; left:89%;         
+}
+/*section Home*/
+.imgCozinha {
+	width:90% !important; height: 90% !important;
+}
+.jumboAttached {
+        font-size:1em; width:100% !important; top:10%; 
+        margin:0% 0% !important;        
+    }
+    .jumboAttached > * {font-size: 0.9em;}
+    #pHome { font-size: 0.6em !important;  }
+.carousel-item {
+	width: 100% !important;	
+}
+.parallaxHome3 {    
+    margin-top: 5%; width: 100%;
+    background: none;
+    background: url("../img/buffetalmoco.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*footer home*/
+
+/*end footer home*/
+.logosFooter {
+        display: none;
+    }
+.pFooter {
+	padding-bottom: 100px;
+}
+/*end section Home Query*/
+/* section Ementa */
+
+.entradas, .carne, .peixe, .sobremesa, .massa, .salada {border: 1px solid lightgray; width: 100%; margin-left: 0%; text-align: left;}
+
+.preco {	
+	padding-bottom: 5%;
+	border-bottom: 1px ridge lightgray;
+}
+/* end Section Ementa */
+
+
+
+} /*end Media Query 800px*/
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+.navbar {
+	border: 2px ridge lightblue ;
+	border-top: none;
+	/*border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; */
+}
+/*section Ementa Query */
+#sectionEmenta {
+	font-size: 0.9em;
+}
+.imgEmenta {
+	height: 150px; width: 150px;
+}
+.preco {	
+	border-bottom: 1px ridge lightgray;
+}
+/*end section Ementa Query */
+
+/*Section Equipa*/
+.imgEquipa {
+	display: none;
+}
+/*.colEquipa { text-align: left; }*/
+.h3Equipa {
+	height: 200px; font-size: 1.3em; 		
+}
+#hJoao {
+	background: url('../img/joao.jpg') no-repeat;
+	background-size: 150px 150px;
+	background-position: 50% 50%;
+}
+#hPaula {
+	background: url('../img/paula.jpg') no-repeat;
+	background-size: 150px 150px;
+	background-position: 50% 50%;
+}
+#hZeza {
+	background: url('https://placeholdit.co//i/300x200') no-repeat;
+	background-size: 150px 150px;
+	background-position: 50% 50%
+}
+#hTeamMember {
+	background: url('https://placeholdit.co//i/300x200') no-repeat;
+	background-size: 150px 150px;
+	background-position: 50% 50%;
+}
+/* end Section Equipa */
+
+}/*end Media Query 600px*/
