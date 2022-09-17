@@ -51,7 +51,17 @@
         <div class="bar3"></div>
     </div>
     <div class="imgsContainer">
-        <div class="left"></div>
+        <div class="left">
+            <div class="testimonial">
+                <h2 class="h2Title">What people say</h2>
+                <hr class="hrTestimonial">
+                <div class="infoContainer">
+                    <p class="pTxt"></p>
+                    <h3 class="h3Name"></h3>
+                    <h4 class="h4Function"></h4>
+                </div>
+            </div>
+        </div>
         <div class="right"></div>
     </div>
 

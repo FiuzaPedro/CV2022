@@ -17,9 +17,9 @@ body {
     height: 800px;
     margin: 0 auto;
     background-image: url('../img/brinde.jpg');
-    background-size: 100% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: top right;
     background-attachment: fixed;
     display: flex;
     justify-content: flex-start;
@@ -31,6 +31,12 @@ body {
     width: 50%;
 }
 
+.left {
+    background-color: black;
+    color: white;
+    text-align: center;
+    /* width: 40%; */
+}
 
 .left:hover {
     cursor: url('../img/arrowleft.gif'), default;
@@ -39,6 +45,33 @@ body {
 .right:hover {
     cursor: url('../img/arrowright.gif'), default;
 }
+
+/* testimonials config */
+.testimonial {
+    /* border: 2px solid white; */
+    margin: 15% 0;
+    padding: 6%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.h2Title {
+    text-shadow: 20px 2px 5px teal;
+}
+
+.h3Name {
+    color: gold;
+}
+
+.hrTestimonial {
+    width: 20%;
+    height: 5px;
+    background-color: teal;
+    margin: 2.5% 40%;
+    border: transparent;
+}
+
+/* end testimonials config */
 
 .bodyTitleContainer {
     position: absolute;

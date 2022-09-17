@@ -127,6 +127,7 @@
 .outerProfessional {
     /* margin: 1% auto 4%; */
     display: inline-block;
+    z-index: -1;
 }
 
 /* .outer {

@@ -162,9 +162,13 @@
     }
 
     .techContainer {
-        margin-top: 20%;
+        margin-top: 10%;
         padding: 10%;
-        border: 2px inset teal;
+        /* border: 2px inset teal; */
+        box-shadow:
+            inset 0px 0px 10px teal,
+            inset 0px 0px 20px teal,
+            inset 0px 0px 30px teal;
         border-radius: 50%;
     }
 
