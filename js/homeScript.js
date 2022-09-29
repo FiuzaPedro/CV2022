@@ -8,6 +8,12 @@ $(document).ready(function () {
             './img/room4smaller.jpg', './img/room2smaller.jpg',
             './img/room3smaller.jpg', './img/meAndDino.jpg'
         ];
+    let testimonial = $('.testimonial');
+    testimonial.fadeOut();
+    setTimeout(function () {
+        testimonial.fadeIn(1000);
+        right.click();
+    }, 3500)
     let counter, counterTestimonials;
     counter = 0; counterTestimonials = 0;
     let infoContainer = $('.infoContainer');
@@ -16,24 +22,30 @@ $(document).ready(function () {
     // testimonials objects
     const testimonials = [
         {
-            text: `Tive o prazer de conhecer o Pedro Fiuza durante o bootcamp da Academia de Código ... 
-            Deparei-me com um verdadeiro “guerreiro”, uma máquina de trabalho, exigente consigo mesmo,
-             com os outros, enquanto não alcança os seus objectivos não descansa… 
-            Uma verdadeira força da natureza.
-            Na Academia de Código, tivemos um projecto, Hackaton (24 horas para desenvolvermos uma webapp),
-             eu como capitão de equipa, e com a responsabilidade de construir uma equipa de 5 elementos,
-              o Pedro foi a minha primeira escolha, não só pelo seu conhecimento a desenvolver em Front End 
-              mas principalmente por todos os outros pontos que enumerei anteriormente. 
-            Foi uma peça imprescindível na equipa, a sua energia, espirito de equipa, a sua garra,
-             e a sua capacidade de desenvolver o nosso projecto ajudou o grupo a alcançar os objectivos definidos,
-              admito que o seu contributo foi uma das peças que nos permitiu ter sucesso no final.`,
+            text: `I had the pleasure to meet Pedro during the "Academia de Código" bootcamp...
+              I came across a true warrior, working machine, self demanding and while his goals are not reached, he's not 
+              resting... A true force of nature.
+              In the "Academia de Código", we had a project called Hackaton (24hours to develop a webapp), 
+              Me as the team Captain, along with the responsibility to build a team of 5 elements, picked
+              Pedro as my first choice, not only for his knowledge on Front End but mostly for all the other
+              characteristics I mentioned earlier. He was a fulcral part of the team, his energy, his team spirit, his
+              tenacity and his capacity to develop our project , helped the group reach it's previously defined objectives.
+              I admit that his contribution was one of the main reasons why our project was successful in the end.`,
             name: "Luís Rodrigues",
-            job: "<BackEnd Developer>"
+            job: "<Fullstack Developer>"
         },
         {
-            text: "",
-            name: "",
-            job: ""
+            text: `I remember someone mentioning in the presentation pitch on the first day of the Code Academy n71
+            Bootcamp class something like "I am ex-military" or "I was in the army".
+            It stuck in my mind but not the person who said it, as the days went by and I couldn't remember who 
+           that person was or could be. Today, after 3 and a half months, graduated as developers, in daily company, 
+           in moments of study partnership in pairs or even at the table at lunch time, talking about programming, 
+           skateboarding, beer, I know who "is" (was) the "military". Corporal Fiuza, since as a cadet what stood out
+            to me was his personal code, simplicity, willpower, disposition in physical energy and in helping his classmates.
+            A can of Redbull to start the heavy day ahead. A person who does not go unnoticed, who leaves us longing and good memories. 
+           Pedro Fiuza, I thank you for the time we spent together, sharing the same classroom, in one of the most important moments of my life.`,
+            name: "Thiago Barlanza",
+            job: "<Fullstack Developer>"
         }
 
     ]
@@ -78,9 +90,9 @@ $(document).ready(function () {
 
     })
 
-    setInterval(function () {
-        right.click()
-    }, 20000)
+    // setInterval(function () {
+    //     right.click()
+    // }, 20000)
 
 
 })
